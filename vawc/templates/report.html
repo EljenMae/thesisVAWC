@@ -3,6 +3,67 @@
 
 {% block content %}
 
-<h1>Hello Report</h1>
+<div class="container pt-3">
+
+<h1 class="text-center"><strong>Anonymous Report</strong></h1>
+
+<h3 class="pt-3"><strong>Victim-Surivor Details</strong></h3>
+
+<form class="pt-3 pb-5">
+
+  <div class="row"><!--First Row-->
+  
+    <h5 class="pt-3"><strong>Name:</strong></h5>
+
+      <div class="col-3"> <!--Firstname-->
+        <label for="victim-firstname" class="form-label">First name: </label>
+        <input type="text" class="form-control" id="victim-firstname">
+      </div>
+
+      <div class="col-3"> <!--middlename-->
+        <label for="victim-middlename" class="form-label">Middle name: </label>
+        <input type="text" class="form-control" id="victim-middlename">
+      </div>
+
+      <div class="col-3"> <!--lastname-->
+        <label for="victim-lastname" class="form-label">Last name: </label>
+        <input type="text" class="form-control" id="victim-lastname">
+      </div>
+
+      <div class="col-3"> <!--suffix-->
+        <label for="victim-Suffix" class="form-label">Suffix: </label>
+        <select id="victim-Suffix" class="form-select">
+          <option value="sr">Sr</option>
+          <option value="jr">Jr</option>
+          <option value="ii">II</option>
+          <option value="iii">III</option>
+          <option value="iv">IV</option>
+          <option value="not-available">N/A</option>
+      </select>
+      </div>
+    </div><!--End of First row-->
+      <div class="row pt-3"><!--Start of second row-->
+
+        <div class="col-3">
+        <input class="form-check-input" type="checkbox" value="" id="invalidCheck">
+        <label class="form-check-label" for="invalidCheck">With Disability</label>
+        </div>
+
+      <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+      </div>
+
+      <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+        <button class="btn btn-outline-primary me-md-2" type="button">Clear</button>
+        <button class="btn btn-primary" type="button">Send</button>
+      </div>
+
+  </div><!---->
+
+  </form><!--End of form-->
+
+</div><!--End of container-->
+
 
 {% endblock content %}
