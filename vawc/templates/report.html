@@ -15,43 +15,284 @@
   
     <h5 class="pt-3"><strong>Name:</strong></h5>
 
-      <div class="col-3"> <!--Firstname-->
+      <div class="col-lg-3 col-md-3 col-sm-8 pb-2"> <!--Firstname-->
         <label for="victim-firstname" class="form-label">First name: </label>
         <input type="text" class="form-control" id="victim-firstname">
       </div>
 
-      <div class="col-3"> <!--middlename-->
+      <div class="col-lg-3 col-md-3 col-sm-8 pb-2"> <!--middlename-->
         <label for="victim-middlename" class="form-label">Middle name: </label>
         <input type="text" class="form-control" id="victim-middlename">
       </div>
 
-      <div class="col-3"> <!--lastname-->
+      <div class="col-lg-3 col-md-3 col-sm-8 pb-2"> <!--lastname-->
         <label for="victim-lastname" class="form-label">Last name: </label>
         <input type="text" class="form-control" id="victim-lastname">
       </div>
 
-      <div class="col-3"> <!--suffix-->
+      <div class="col-lg-3 col-md-3 col-sm-8 pb-2"> <!--suffix-->
         <label for="victim-Suffix" class="form-label">Suffix: </label>
         <select id="victim-Suffix" class="form-select">
+          <option value="not-available">N/A</option>
           <option value="sr">Sr</option>
           <option value="jr">Jr</option>
           <option value="ii">II</option>
           <option value="iii">III</option>
           <option value="iv">IV</option>
-          <option value="not-available">N/A</option>
       </select>
       </div>
     </div><!--End of First row-->
+
       <div class="row pt-3"><!--Start of second row-->
 
-        <div class="col-3">
+        <div class="col-lg-3 col-md-3 col-sm-8 pb-2">
         <input class="form-check-input" type="checkbox" value="" id="invalidCheck">
         <label class="form-check-label" for="invalidCheck">With Disability</label>
         </div>
 
-      <div class="mb-3 form-check">
-        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        <div class="col-lg-3 col-md-3 col-sm-8 pb-2">
+          <input class="form-check-input" type="checkbox" value="" id="invalidCheck">
+          <label class="form-check-label" for="invalidCheck">Permanent Disability</label>
+          </div>
+
+          <div class="col-lg-3 col-md-3 col-sm-8 pb-3">
+            <input class="form-check-input" type="checkbox" value="" id="invalidCheck">
+            <label class="form-check-label" for="invalidCheck">Temporary Disability</label>
+            </div>
+  
+      </div><!--End of row-->
+
+      <div class="row"><!--Start of third row-->
+        <div class="col-lg-3 col-md-3 col-sm-8 pb-2">
+          <input class="form-check-input" type="checkbox" value="" id="invalidCheck">
+          <label class="form-check-label" for="invalidCheck">Without Disability</label>
+          </div>
+      </div><!--End of row-->
+
+      <div class="row pt-3"><!--Start of fourth row-->
+
+        <div class="col-lg-3 col-md-3 col-sm-8 pb-2">
+          <label for="victim-sex" class="form-label">Sex: </label>
+            <select id="victim-sex" class="form-select">
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+          </select>
+          </div>
+
+          <div class="col-lg-3 col-md-3 col-sm-8 pb-2">
+            <label for="victim-birthdate" class="form-label">Birth Date: </label>
+            <input type="date" class="form-control" id="victim-birthdate">
+          </div>
+
+          <div class="col-lg-3 col-md-3 col-sm-8 pb-2">
+            <label for="victim-age" class="form-label">Age: </label>
+            <input type="number" class="form-control" id="victim-age">
+          </div>
+
+          <div class="col-lg-3 col-md-3 col-sm-8 pb-2">
+            <label for="victim-civilstatus" class="form-label">Civil Status: </label>
+              <select id="victim-civilstatus" class="form-select">
+                <option value="single">Single</option>
+                <option value="married">Married</option>
+                <option value="live-in">Live-In</option>
+                <option value="widowed">Widowed</option>
+                <option value="separated">Separated</option>
+            </select>
+            </div>
+      </div><!--End of row-->
+
+      <div class="row pt-3 pb-3">
+
+        <div class="col-lg-3 col-md-3 col-sm-8 pb-2">
+          <label for="victim-highestEduct" class="form-label">Highest Educational Attainment: </label>
+            <select id="victim-highestEduct" class="form-select">
+              <option value="noFormalEduct">No Formal Education</option>
+              <option value="elementary">Elementary Level / Graduated</option>
+              <option value="highSchool">High School Level / Graduated</option>
+              <option value="vocatioanal">Vocational</option>
+              <option value="collegeLevel">College Level / Graduated</option>
+              <option value="post-grad">Post Graduated</option>
+              <option value="no-response">No Response</option>
+              <option value="educt-others">Others</option>
+          </select>
+          </div>
+
+          <div class="col-lg-3 col-md-3 col-sm-8 pb-2">
+            <label for="victim-nationality" class="form-label">Nationality: </label>
+            <input type="text" class="form-control" id="victim-nationality">
+          </div>
+
+          <div class="col-lg-3 col-md-3 col-sm-8 pb-2">
+            <label for="victim-passportNo" class="form-label">Passport No (If non-filipino): </label>
+            <input type="text" class="form-control" id="victim-passportNo">
+          </div>
+
+          <div class="col-lg-3 col-md-3 col-sm-8">
+            <label for="victim-occupation" class="form-label">Occupation: </label>
+            <input type="text" class="form-control" id="victim-occupation">
+          </div>
+      </div><!--End of row-->
+
+      <div class="row pb-3">
+        <div class="col-lg-3 col-md-3 col-sm-8 pb-2">
+          <label for="victim-highestEduct" class="form-label">Religion: </label>
+            <select id="victim-highestEduct" class="form-select">
+              <option value="roman-catholic">Roman Catholic</option>
+              <option value="islam">Islam</option>
+              <option value="protestant">Protestant</option>
+              <option value="iglesia-ni-kristo">Iglesia ni Kristo</option>
+              <option value="aglipayan">Aglipayan</option>
+              <option value="other-religion">Others</option>
+          </select>
+        </div>
+
+        <div class="col-lg-3 col-md-3 col-sm-8 pb-2">
+          <label for="victim-address" class="form-label">Address: </label>
+          <input type="text" class="form-control" id="victim-address">
+        </div>
+
+        <div class="col-lg-3 col-md-3 col-sm-8 pb-2">
+          <label for="victim-region" class="form-label">Region: </label>
+            <select id="victim-region" class="form-select">
+              <option value="region-I">Region I – Ilocos Region</option>
+              <option value="region-II">Region II – Cagayan Valley</option>
+              <option value="region-III">Region III – Central Luzon</option>
+              <option value="region-IV">Region IV‑A – CALABARZON</option>
+              <option value="mimaropa">MIMAROPA Region</option>
+              <option value="region-V">Region V – Bicol Region</option>
+              <option value="region-VI">Region VI – Western Visayas</option>
+              <option value="region-VII">Region VII – Central Visayas</option>
+              <option value="region-VIII">Region VIII – Eastern Visayas</option>
+              <option value="region-IX">Region IX – Zamboanga Peninsula</option>
+              <option value="region-X">Region X – Northern Mindanao</option>
+              <option value="region-XI">Region XI – Davao Region</option>
+              <option value="region-XII">Region XII – SOCCSKSARGEN</option>
+              <option value="region-XIII">Region XIII – Caraga</option>
+              <option value="ncr">NCR – National Capital Region</option>
+              <option value="car">CAR – Cordillera Administrative Region</option>
+              <option value="barmm">BARMM – Bangsamoro Autonomous Region in Muslim Mindanao</option>
+          </select>
+        </div>
+
+        <div class="col-lg-3 col-md-3 col-sm-8">
+          <label for="victim-province" class="form-label">Province: </label>
+          <input type="text" class="form-control" id="victim-province">
+        </div>
+      </div><!--End of row-->
+
+      <div class="row pb-3">
+        
+        <div class="col-lg-3 col-md-3 col-sm-8">
+          <label for="victim-city" class="form-label">City / Mun: </label>
+          <input type="text" class="form-control" id="victim-city">
+        </div>
+
+        <div class="col-lg-3 col-md-3 col-sm-8">
+          <label for="victim-barangay" class="form-label">Barangay: </label>
+          <input type="text" class="form-control" id="victim-barangay">
+        </div>
+
+        <div class="col-lg-3 col-md-3 col-sm-8">
+          <label for="victim-numOfchildren" class="form-label">Number of Children (if any): </label>
+          <input type="number" class="form-control" id="victim-numOfchildren">
+        </div>
+
+        <div class="col-lg-3 col-md-3 col-sm-8">
+          <label for="victim-agesOfChildren" class="form-label">Ages of Children: </label>
+          <input type="number" class="form-control" id="victim-agesOfChildren">
+        </div>
+      </div><!--End of row-->
+
+      <div class="row pt-3 pb-3">
+        <h5 class="pt-3"><strong>Name of Parent / Guardian:</strong></h5>
+        <div class="col-lg-3 col-md-3 col-sm-8 pt-3">
+          <label for="victim-firstNameOfguardian" class="form-label">First name:  </label>
+          <input type="text" class="form-control" id="victim-firstnameOfguardian">
+        </div>
+
+        <div class="col-lg-3 col-md-3 col-sm-8 pt-3">
+          <label for="victim-middleNameOfguardian" class="form-label">Middle name:  </label>
+          <input type="text" class="form-control" id="victim-middleNameOfguardian">
+        </div>
+
+        <div class="col-lg-3 col-md-3 col-sm-8 pt-3">
+          <label for="victim-lastNameOfguardian" class="form-label">Last name:  </label>
+          <input type="text" class="form-control" id="victim-lastNameOfguardian">
+        </div>
+
+        <div class="col-lg-3 col-md-3 col-sm-8 pt-3"> <!--suffix-->
+          <label for="victim-suffixOfguardian" class="form-label">Suffix: </label>
+          <select id="victim-suffixOfguardian" class="form-select">
+            <option value="not-available">N/A</option>
+            <option value="sr">Sr</option>
+            <option value="jr">Jr</option>
+            <option value="ii">II</option>
+            <option value="iii">III</option>
+            <option value="iv">IV</option>
+        </select>
+      </div>
+      </div><!--End of row-->
+      <div class="row pt-3 pb-3">
+          <div class="col-lg-4 col-md-4 col-sm-8">
+            <label for="victim-guardianRelationship" class="form-label"><strong>Relationship of Guardian to Victim-Surivor:</strong></label>
+            <input type="text" class="form-control" id="victim-guardianRelationship">
+          </div>
+
+          <div class="col-lg-4 col-md-4 col-sm-8">
+            <label for="victim-guardianAddress" class="form-label">Address:</label>
+            <input type="text" class="form-control" id="victim-guardianAddress">
+          </div>
+
+          <div class="col-lg-4 col-md-4 col-sm-8">
+            <label for="victim-guarfianregion" class="form-label">Region: </label>
+              <select id="victim-guarfianregion" class="form-select">
+                <option value="region-I">Region I – Ilocos Region</option>
+                <option value="region-II">Region II – Cagayan Valley</option>
+                <option value="region-III">Region III – Central Luzon</option>
+                <option value="region-IV">Region IV‑A – CALABARZON</option>
+                <option value="mimaropa">MIMAROPA Region</option>
+                <option value="region-V">Region V – Bicol Region</option>
+                <option value="region-VI">Region VI – Western Visayas</option>
+                <option value="region-VII">Region VII – Central Visayas</option>
+                <option value="region-VIII">Region VIII – Eastern Visayas</option>
+                <option value="region-IX">Region IX – Zamboanga Peninsula</option>
+                <option value="region-X">Region X – Northern Mindanao</option>
+                <option value="region-XI">Region XI – Davao Region</option>
+                <option value="region-XII">Region XII – SOCCSKSARGEN</option>
+                <option value="region-XIII">Region XIII – Caraga</option>
+                <option value="ncr">NCR – National Capital Region</option>
+                <option value="car">CAR – Cordillera Administrative Region</option>
+                <option value="barmm">BARMM – Bangsamoro Autonomous Region in Muslim Mindanao</option>
+            </select>
+          </div>
+      </div><!--End of row-->
+
+      <div class="row pb-3">
+
+        <div class="col-lg-3 col-md-3 col-sm-8">
+          <label for="victim-guardianprovince" class="form-label">Province:</label>
+          <input type="text" class="form-control" id="victim-guarfianprovince">
+        </div>
+
+        <div class="col-lg-3 col-md-3 col-sm-8">
+          <label for="victim-guardiancity" class="form-label">City / Mun:</label>
+          <input type="text" class="form-control" id="victim-guardiancity">
+        </div>
+
+        <div class="col-lg-3 col-md-3 col-sm-8">
+          <label for="victim-guardianbarangay" class="form-label">Barangay:</label>
+          <input type="text" class="form-control" id="victim-guardianbarangay">
+        </div>
+
+        <div class="col-lg-3 col-md-3 col-sm-8">
+          <label for="victim-guardianbarangay" class="form-label"><strong>Contact No. of Parent / Guardian:</strong></label>
+          <input type="number" class="form-control" id="victim-guardianbarangay">
+        </div>
+
+      </div>
+
+      <h3 class="pt-3"><strong>Perpetrator Information</strong></h3>
+      <div class="row pt-3 pb-3">
       </div>
 
       <div class="d-grid gap-2 d-md-flex justify-content-md-end">
