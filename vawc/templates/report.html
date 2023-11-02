@@ -135,8 +135,8 @@
 
       <div class="row pb-3">
         <div class="col-lg-3 col-md-3 col-sm-8 pb-2">
-          <label for="victim-highestEduct" class="form-label">Religion: </label>
-            <select id="victim-highestEduct" class="form-select">
+          <label for="victim-religion" class="form-label">Religion: </label>
+            <select id="victim-religion" class="form-select">
               <option value="roman-catholic">Roman Catholic</option>
               <option value="islam">Islam</option>
               <option value="protestant">Protestant</option>
@@ -289,11 +289,132 @@
           <input type="number" class="form-control" id="victim-guardianbarangay">
         </div>
 
-      </div>
+      </div><!--End of row-->
 
       <h3 class="pt-3"><strong>Perpetrator Information</strong></h3>
       <div class="row pt-3 pb-3">
-      </div>
+          <h5 class="pt-3"><strong>Name:</strong></h5>
+            <div class="col-lg-3 col-md-3 col-sm-8 pb-2"> <!--Firstname-->
+              <label for="perpetrator-firstname" class="form-label">First name: </label>
+              <input type="text" class="form-control" id="victim-firstname">
+            </div>
+      
+            <div class="col-lg-3 col-md-3 col-sm-8 pb-2"> <!--middlename-->
+              <label for="perpetrator-middlename" class="form-label">Middle name: </label>
+              <input type="text" class="form-control" id="perpetrator-middlename">
+            </div>
+      
+            <div class="col-lg-3 col-md-3 col-sm-8 pb-2"> <!--lastname-->
+              <label for="perpetrator-lastname" class="form-label">Last name: </label>
+              <input type="text" class="form-control" id="perpetrator-lastname">
+            </div>
+      
+            <div class="col-lg-3 col-md-3 col-sm-8 pb-2"> <!--suffix-->
+              <label for="victim-Suffix" class="form-label">Suffix: </label>
+              <select id="victim-Suffix" class="form-select">
+                <option value="not-available">N/A</option>
+                <option value="sr">Sr</option>
+                <option value="jr">Jr</option>
+                <option value="ii">II</option>
+                <option value="iii">III</option>
+                <option value="iv">IV</option>
+            </select>
+            </div>
+      </div> <!--End of row-->
+
+      <div class="row pb-3">
+        <div class="col-lg-3 col-md-3 col-sm-8 pb-2"> <!--lastname-->
+          <label for="perpetrator-alias" class="form-label">Alias: </label>
+          <input type="text" class="form-control" id="perpetrator-alias">
+        </div>
+
+        <div class="col-lg-3 col-md-3 col-sm-8 pb-2">
+          <label for="perpetrator-sex" class="form-label">Sex: </label>
+            <select id="perpetrator-sex" class="form-select">
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+          </select>
+          </div>
+
+          <div class="col-lg-3 col-md-3 col-sm-8 pb-2">
+            <label for="Perpetrator-birthdate" class="form-label">Birth Date: </label>
+            <input type="date" class="form-control" id="perpetrator-birthdate">
+          </div>
+
+          <div class="col-lg-3 col-md-3 col-sm-8 pb-2">
+            <label for="perpetrator-age" class="form-label">Age: </label>
+            <input type="number" class="form-control" id="perpetrator-age">
+          </div>
+
+      </div><!--End of row-->
+
+      <div class="row pb-3">
+        <div class="col-lg-3 col-md-3 col-sm-8 pb-2">
+          <label for="perpetrator-civilstatus" class="form-label">Civil Status: </label>
+            <select id="perpetrator-civilstatus" class="form-select">
+              <option value="single">Single</option>
+              <option value="married">Married</option>
+              <option value="live-in">Live-In</option>
+              <option value="widowed">Widowed</option>
+              <option value="separated">Separated</option>
+          </select>
+          </div>
+
+          <div class="col-lg-3 col-md-3 col-sm-8 pb-2">
+            <label for="perpetrator-highestEduct" class="form-label">Highest Educational Attainment: </label>
+              <select id="perpetrator-highestEduct" class="form-select">
+                <option value="noFormalEduct">No Formal Education</option>
+                <option value="elementary">Elementary Level / Graduated</option>
+                <option value="highSchool">High School Level / Graduated</option>
+                <option value="vocatioanal">Vocational</option>
+                <option value="collegeLevel">College Level / Graduated</option>
+                <option value="post-grad">Post Graduated</option>
+                <option value="no-response">No Response</option>
+                <option value="educt-others">Others</option>
+            </select>
+            </div>
+  
+            <div class="col-lg-3 col-md-3 col-sm-8 pb-2">
+              <label for="perpetrator-nationality" class="form-label">Nationality: </label>
+              <input type="text" class="form-control" id="perpetrator-nationality">
+            </div>
+  
+            <div class="col-lg-3 col-md-3 col-sm-8 pb-2">
+              <label for="perpetrator-passportNo" class="form-label">Passport No (If non-filipino): </label>
+              <input type="text" class="form-control" id="perpetrator-passportNo">
+            </div>
+      </div><!--End of row-->
+
+      <div class="row pb-3">
+
+        <div class="col-lg-3 col-md-3 col-sm-8">
+          <label for="perpetrator-occupation" class="form-label">Occupation: </label>
+          <input type="text" class="form-control" id="perpetrator-occupation">
+        </div>
+
+        <div class="col-lg-3 col-md-3 col-sm-8">
+          <label for="perpetrator-occupation" class="form-label">Occupation: </label>
+          <input type="text" class="form-control" id="perpetrator-occupation">
+        </div>
+
+        <div class="col-lg-3 col-md-3 col-sm-8">
+          <label for="perpetrator-identifyingMask" class="form-label">Identifying Masks: </label>
+          <input type="text" class="form-control" id="perpetrator-identifyingMask">
+        </div>
+
+        <div class="col-lg-3 col-md-3 col-sm-8 pb-2">
+          <label for="perpetrator-religion" class="form-label">Religion: </label>
+            <select id="perpetrator-religion" class="form-select">
+              <option value="roman-catholic">Roman Catholic</option>
+              <option value="islam">Islam</option>
+              <option value="protestant">Protestant</option>
+              <option value="iglesia-ni-kristo">Iglesia ni Kristo</option>
+              <option value="aglipayan">Aglipayan</option>
+              <option value="other-religion">Others</option>
+          </select>
+        </div>
+
+      </div><!--End of row-->
 
       <div class="d-grid gap-2 d-md-flex justify-content-md-end">
         <button class="btn btn-outline-primary me-md-2" type="button">Clear</button>
