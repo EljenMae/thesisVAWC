@@ -47,7 +47,7 @@
 
         <div class="col-lg-3 col-md-3 col-sm-8 pb-2">
         <input class="form-check-input" type="checkbox" value="" id="invalidCheck">
-        <label class="form-check-label" for="invalidCheck">With Disability</label>
+        <label class="form-check-label" for="invalidCheck"><strong>With Disability</strong></label>
         </div>
 
         <div class="col-lg-3 col-md-3 col-sm-8 pb-2">
@@ -65,7 +65,7 @@
       <div class="row"><!--Start of third row-->
         <div class="col-lg-3 col-md-3 col-sm-8 pb-2">
           <input class="form-check-input" type="checkbox" value="" id="invalidCheck">
-          <label class="form-check-label" for="invalidCheck">Without Disability</label>
+          <label class="form-check-label" for="invalidCheck"><strong>Without Disability</strong></label>
           </div>
       </div><!--End of row-->
 
@@ -684,6 +684,99 @@
         </div>
       </div><!--End of row-->
 
+      <div class="row pb-3">
+        <div class="col-lg-12 col-md-12 col-sm-8 pt-3">
+          <label for="exampleFormControlTextarea1" class="form-label"><strong>Description of Incident: </strong></label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+      </div><!--End of row-->
+
+      <div class="row pb-4">
+        <div class="col-lg-3 col-md-3 col-sm-8 pt-3">
+          <label for="dateOfLatestIncident" class="form-label"><strong>Date of Latest Incident: </strong>(MM/DD/Year) </label>
+          <input type="date" class="form-control" id="dateOfLatestIncident">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+          <label class="form-check-label" for="flexCheckChecked">Incomplete Date</label>
+        </div>
+      </div><!--End of row-->
+
+      <h3 class="pt-3"><strong>Geographic Location of Incident</strong></h3>
+
+        <div class="row pt-3 pb-3">
+
+          <div class="col-lg-3 col-md-3 col-sm-8 pb-2">
+            <label for="incident-region" class="form-label">Region: </label>
+              <select id="incident-region" class="form-select">
+                <option value="region-I">Region I – Ilocos Region</option>
+                <option value="region-II">Region II – Cagayan Valley</option>
+                <option value="region-III">Region III – Central Luzon</option>
+                <option value="region-IV">Region IV‑A – CALABARZON</option>
+                <option value="mimaropa">MIMAROPA Region</option>
+                <option value="region-V">Region V – Bicol Region</option>
+                <option value="region-VI">Region VI – Western Visayas</option>
+                <option value="region-VII">Region VII – Central Visayas</option>
+                <option value="region-VIII">Region VIII – Eastern Visayas</option>
+                <option value="region-IX">Region IX – Zamboanga Peninsula</option>
+                <option value="region-X">Region X – Northern Mindanao</option>
+                <option value="region-XI">Region XI – Davao Region</option>
+                <option value="region-XII">Region XII – SOCCSKSARGEN</option>
+                <option value="region-XIII">Region XIII – Caraga</option>
+                <option value="ncr">NCR – National Capital Region</option>
+                <option value="car">CAR – Cordillera Administrative Region</option>
+                <option value="barmm">BARMM – Bangsamoro Autonomous Region in Muslim Mindanao</option>
+            </select>
+          </div>
+
+          <div class="col-lg-3 col-md-3 col-sm-8">
+            <label for="incident-province" class="form-label">Province: </label>
+            <input type="text" class="form-control" id="incident-province">
+          </div>
+
+          <div class="col-lg-3 col-md-3 col-sm-8">
+            <label for="incident-city" class="form-label">City / Mun: </label>
+            <input type="text" class="form-control" id="incident-city">
+          </div>
+
+          <div class="col-lg-3 col-md-3 col-sm-8">
+            <label for="incident-barangay" class="form-label">Barangay: </label>
+            <input type="text" class="form-control" id="incident-barangay">
+          </div>
+        </div><!--End of row-->
+
+        <div class="row pb-3">
+          <div class="col-lg-12 col-md-12 col-sm-8">
+            <label for="placeOfIncident" class="form-label"><strong>Place of Incident: </strong></label>
+              <select id="placeOfIncident" class="form-select">
+                <option value="Home">Home</option>
+                <option value="work">Work</option>
+                <option value="school">School</option>
+                <option value="commercial-places">Commercial Places</option>
+                <option value="religious-institutions">Religious Institutions</option>
+                <option value="placeOfMedicalTreatment">Place of Medical Treatment</option>
+                <option value="transport-ConnectingSites">Transport & Connecting Sites</option>
+                <option value="brothels-SimilarEstablishments">Brothels and Similar Extablishments</option>
+                <option value="peopleOfAuthority">Others</option>
+                <option value="currentFiance">No Response</option>
+            </select>
+          </div>
+        </div>
+
+        <h3 class="pt-3"><strong>Services Information</strong></h3>
+
+        <div class="row pb-3">
+        <div class="col-lg-6 col-md-6 col-sm-8 pt-3">
+         <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+          <label class="form-check-label" for="flexCheckChecked">Crisis intervention including rescue</label>
+        </div>
+
+        <div class="col-lg-6 col-md-6 col-sm-8 pt-3">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+           <label class="form-check-label" for="flexCheckChecked">Issuance / Enforcement of Barangay Protection Order</label>
+         </div>
+        </div><!--End of row-->
+
+
+        <!--buttons-->
       <div class="d-grid gap-2 d-md-flex justify-content-md-end">
         <button class="btn btn-outline-primary me-md-2" type="button">Clear</button>
         <button class="btn btn-primary" type="button">Send</button>
