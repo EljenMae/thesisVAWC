@@ -7,3 +7,6 @@ def home(request):
 
 def report(request):
     return render(request, 'report.html')
+
+def dswd(request):
+    return render(request, 'dswd-dashboard.html')
