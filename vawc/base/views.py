@@ -9,5 +9,5 @@ def report(request):
     return render(request, 'vawc/report.html')
 
 def dswd(request):
-    return render(request, 'dswd-dashboard.html')
+    return render(request, 'vawc/dswd-dashboard.html')
 
