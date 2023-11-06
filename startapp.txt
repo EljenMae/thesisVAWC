@@ -6,3 +6,6 @@ python manage.py migrate
 
 python manage.py startapp "name of model"
 pip freeze > requirements.txt (all requirements to be install and should be update)
+
+(Creating a admin)
+python manage.py createsuperuser
