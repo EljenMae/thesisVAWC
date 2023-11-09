@@ -15,6 +15,12 @@ def login(request):
 def signup(request):
     return render(request, 'vawc/signup.html')
 
+def code(request):
+    return render(request, 'vawc/send-code.html')
+
+def newpass(request):
+    return render(request, 'vawc/new-pass.html')
+
 def barangay(request):
     return render(request, 'vawc/barangay-dashboard.html')
 
