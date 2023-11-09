@@ -2,6 +2,8 @@
 
 
 {% block content %}
+{% block static %}
+{% load static %}
 <div class="section pb-3">
     <div id="carouselExampleIndicators" class="carousel slide">
         <div class="carousel-indicators">
@@ -173,5 +175,5 @@
           </div>
     </div>
     <!--End Section for PCW mandates and functions-->
-
+    {% endblock %}
 {% endblock content %}
