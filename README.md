@@ -1,2 +1,4 @@
 # thesisVAWC
- Finalize Finally
+-Djngo
+-Responsive
+-All Front-end for now
