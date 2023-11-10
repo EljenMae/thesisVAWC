@@ -5,15 +5,15 @@
 {% block static %}
 {% load static %}
 <div class="section pb-3">
-    <div id="carouselExampleIndicators" class="carousel slide">
-        <div class="carousel-indicators">
+    <div id="carouselExampleIndicators" class="carousel slide ">
+        <div class="carousel-indicators ">
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
         <div class="carousel-inner">
-        <div class="carousel-item active">
-            <img src= "{% static '/img/example1.jpg' %}"  class="d-block w-100" alt="Example 1">
+        <div class="carousel-item active h-50">
+            <img src= "{% static '/img/example1.jpg' %}" class="d-block w-100" alt="Example 1">
         </div>
         <div class="carousel-item">
             <img src="{% static '/img/example2.jpg' %}" class="d-block w-100" alt="Example 2">
@@ -40,20 +40,16 @@
         <div class="row"><!--First row-->
             <div class="col-lg-4 col-md-4 col-sm-8 pb-3"><!--First col-->
                 <div class="card"><!--End card-->
-                    <img src="..." class="card-img-top" alt="...">
+                    <img src="{% static '/img/markus.png' %}" class="card-img-top mx-auto w-50 h-50" alt="Ferdinand Marcos">
                     <div class="card-body">
-                      <p class="card-text text-center fw-bold">1965-1986</p>
-                      <p class="card-text text-center">Administrator</p>
                       <h5 class="card-text text-center fw-bold">Ferdinand Emmanuel Edralin Marcos</h6>
                     </div>
                   </div><!--End card-->
             </div><!--First col-->
             <div class="col-lg-4 col-md-4 col-sm-8 pb-3"><!--second col-->
                 <div class="card"><!--End card-->
-                    <img src="..." class="card-img-top" alt="...">
+                    <img src="{% static '/img/coryg.png' %}" class="card-img-top mx-auto w-50 h-50" alt="Cory Aquino">
                     <div class="card-body">
-                      <p class="card-text text-center fw-bold">1986-1992</p>
-                      <p class="card-text text-center">Administrator</p>
                       <h5 class="card-text text-center fw-bold">Maria Corazon Cojuanco Aquino</h6>
                     </div>
                   </div><!--End card-->
@@ -61,11 +57,9 @@
             </div><!--second col-->
 
             <div class="col-lg-4 col-md-4 col-sm-8 pb-3"><!--third col-->
-                <div class="card"><!--End card-->
-                    <img src="..." class="card-img-top" alt="...">
+                <div class="card text-center"><!--End card-->
+                    <img src="{% static '/img/ramos-218x300.png' %}" class="card-img-top mx-auto w-50 h-50" alt="Fidel Ramos">
                     <div class="card-body">
-                      <p class="card-text text-center fw-bold">1992-1998</p>
-                      <p class="card-text text-center">Administrator</p>
                       <h5 class="card-text text-center fw-bold">Fidel Valdez Ramos</h6>
                     </div>
                   </div><!--End card-->
@@ -75,20 +69,16 @@
         <div class="row"><!--second row-->
             <div class="col-lg-4 col-md-4 col-sm-8 pb-3"><!--First col-->
                 <div class="card"><!--End card-->
-                    <img src="..." class="card-img-top" alt="...">
+                    <img src="{% static '/img/joserap.png' %}" class="card-img-top mx-auto w-50 h-50" alt="Joseph Estrada">
                     <div class="card-body">
-                      <p class="card-text text-center fw-bold">1998-2001</p>
-                      <p class="card-text text-center">Administrator</p>
                       <h5 class="card-text text-center fw-bold">Joseph Ejercito Estrada</h6>
                     </div>
                   </div><!--End card-->
             </div><!--First col-->
             <div class="col-lg-4 col-md-4 col-sm-8 pb-3"><!--second col-->
                 <div class="card"><!--End card-->
-                    <img src="..." class="card-img-top" alt="...">
+                    <img src="{% static '/img/glorya-gggg.png' %}" class="card-img-top mx-auto w-50 h-50" alt="Gloria Arroyo">
                     <div class="card-body">
-                      <p class="card-text text-center fw-bold">2001-2010</p>
-                      <p class="card-text text-center">Administrator</p>
                       <h5 class="card-text text-center fw-bold">Gloria Macapagal Arroyo</h6>
                     </div>
                   </div><!--End card-->
@@ -97,22 +87,18 @@
 
             <div class="col-lg-4 col-md-4 col-sm-8 pb-3"><!--third col-->
                 <div class="card"><!--End card-->
-                    <img src="..." class="card-img-top" alt="...">
+                    <img src="{% static '/img/nobenigs.png' %}" class="card-img-top mx-auto w-50 h-50" alt="Noynoy">
                     <div class="card-body">
-                      <p class="card-text text-center fw-bold">2010-2016</p>
-                      <p class="card-text text-center">Administrator</p>
                       <h5 class="card-text text-center fw-bold">Benigno Simeon Cojuanco Aquino III</h6>
                     </div>
                   </div><!--End card-->
             </div><!--third col-->
         </div><!--second row-->
-        <div class="row  pb-3"><!--third row-->
-            <div class="col-lg-12 col-md-12 col-sm-8 pb-3"><!--First col-->
-                <div class="card"><!--End card-->
-                    <img src="..." class="card-img-top" alt="...">
+        <div class="row pb-3"><!--third row-->
+            <div class="col-lg-4 col-md-4 col-sm-8 pb-3"><!--First col-->
+                <div class="card "><!--End card-->
+                    <img src="{% static '/img/RD-218x300-1.png' %}" class="ccard-img-top mx-auto w-50 h-50" alt="Duterte">
                     <div class="card-body">
-                      <p class="card-text text-center fw-bold">2016-2022</p>
-                      <p class="card-text text-center">Administrator</p>
                       <h5 class="card-text text-center fw-bold">Rodrigo Roa Duterte</h6>
                     </div>
                   </div><!--End card-->

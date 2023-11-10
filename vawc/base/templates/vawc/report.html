@@ -3,7 +3,7 @@
 
 {% block content %}
 
-<div class="container pt-3">
+<div class="container pt-5">
 
 <h1 class="text-center"><strong>Anonymous Report</strong></h1>
 
@@ -796,15 +796,36 @@
         <!--buttons-->
       <div class="d-grid gap-2 d-md-flex justify-content-md-end">
         <button class="btn btn-outline-primary me-md-2" type="button">Clear</button>
-        <button class="btn btn-primary" type="button">Send</button>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#anonymousReport">Send</button>
       </div>
       
 
+      
+      
   </div><!---->
 
   </form><!--End of form-->
 
 </div><!--End of container-->
+
+<!-- Modal -->
+<div class="modal fade" id="anonymousReport" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="anonymousReportLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="anonymousReportLabel">Confirmation</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        The right to complain/ rights of user
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Confirm</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 {% endblock content %}

@@ -3,7 +3,7 @@
 
 <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">
+    <a class="navbar-brand" href="{% url 'home' %}">
       <img src="{% static '/img/vawc-Logo.png' %}" alt="VAWC Logo" width="140" height="60" class="d-inline-block align-text-top">
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
@@ -12,17 +12,17 @@
     <div class="collapse navbar-collapse" id="navbarColor01">
       <ul class="navbar-nav ms-auto mb-3 mx-4 mb-lg-0">
         <li class="nav-item justify-content-end">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Report</a>
+          <a class="nav-link" href="{% url 'report' %}">Report</a>
         </li>
       </ul>
       <div class="d-grid gap-2 d-lg-flex">
         <button class="btn btn-outline-primary" type="button">
-          <a class="text-light text-decoration-none" href="#">Log In</a>
+          <a class="text-light text-decoration-none" href="{% url 'login' %}">Log In</a>
         </button>
-        <button class="btn btn-outline-light" type="button">Sign Up</button>
+        <a class="btn btn-outline-light" href="{% url 'signup' %}" role="button">Sign Up</a>
       </div>
     </div>
   </div>

@@ -7,7 +7,7 @@
 <div class="container pt-5 pb-5">
     <div class="card">
         <div class="card-body">
-            <button type="button" class="btn-close d-flex ms-auto" aria-label="Close"></button>
+            <a href="{% url 'home' %}"><button type="button" class="btn-close d-flex ms-auto" aria-label="Close"></button></a>
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-sm-8 pt-5">
                     <img src= "{% static '/img/signup.png' %}" class="img-fluid" alt="image">
@@ -80,8 +80,8 @@
                         <button class="btn btn-lg btn-primary w-100" type="button">Sign Up</button>
                     </div>
                     <div class="row">
-                        <div class="col-12 col-md-12 col-sm-8">
-                            <button type="button" class="btn btn-link w-100"><a href="#">Have an account?</a></button>
+                        <div class="col-12 col-md-12 col-sm-8 pt-2">
+                            <p class="text-body-secondary text-center">All ready have an account?<a href="{% url 'login' %}" class="text-reset">Log In</a>.</p>
                         </div>
                     </div>
                 </div>

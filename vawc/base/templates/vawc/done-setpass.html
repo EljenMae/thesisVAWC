@@ -1,0 +1,18 @@
+{% extends "main.html" %}
+
+{% block content %}
+{% block static %}
+{% load static %}
+
+<div class="container pt-3 pb-5">
+    <div class="text-center">
+    <img src= "{% static '/img/forgotpass.png' %}" class="img-fluid w-50 h-50" alt="image">
+    <h2>All done</h2>
+    <p class="fs-6 fw-light">Your password has been reset so now you can log in to you account.</p>
+    <div class="d-grid col-lg-6 col-md-6 col-sm-8 mx-auto">
+        <a href="{% url 'login' %}"><button class="btn btn-lg btn-primary w-50" type="button">Log In</button></a>
+    </div>
+    </div>
+</div>
+{% endblock %}
+{% endblock content %}
