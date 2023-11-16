@@ -27,11 +27,20 @@ def newpass(request):
 def doneSetPass(request):
     return render(request, 'vawc/done-setpass.html')
 
+# Barangay side.
 def barangay(request):
-    return render(request, 'vawc/barangay-dashboard.html')
+    return render(request, 'vawc/barangay/barangay-dashboard.html')
 
+def barreport(request):
+    return render(request, 'vawc/barangay/barangay-report.html')
+
+def addreport(request):
+    return render(request, 'vawc/barangay/barangay-addreport.html')
+
+# Police side.
 def police(request):
-    return render(request, 'vawc/police-dashboard.html')
+    return render(request, 'vawc/police/police-dashboard.html')
 
+# dswd side.
 def dswd(request):
-    return render(request, 'vawc/dswd-dashboard.html')
+    return render(request, 'vawc/dswd/dswd-dashboard.html')

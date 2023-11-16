@@ -12,6 +12,8 @@ urlpatterns = [
     path('new-pass/', views.newpass, name="new password"),
     path('done-setpass/', views.doneSetPass, name="Password Set Up Done"),
     path('barangay/dashboard', views.barangay, name="barangay"),
+    path('barangay/report', views.barreport, name="barangay report"),
+    path('barangay/addreport', views.addreport, name="barangay add report"),
     path('police/dashboard', views.police, name="police"),
     path('dswd/dashboard', views.dswd, name="dswd"),
     

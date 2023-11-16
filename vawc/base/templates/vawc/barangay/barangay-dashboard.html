@@ -1,0 +1,112 @@
+{% extends "barangay-main.html" %}
+
+
+{% block content %}
+{% block static %}
+{% load static %}
+
+<div class="container pt-5">
+  <h1 class="pt-5">DASHBOARD</h1>
+    <div class="row pt-3">
+        <div class="col-lg-4 col-md-4 col-sm-8">
+            <div class="card">
+                <div class="card-body">
+                  Total Victims
+                </div>
+              </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-8">
+            <div class="card">
+                <div class="card-body">
+                  Total Suspects
+                </div>
+              </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-8">
+            <div class="card">
+                <div class="card-body">
+                  Total BPO
+                </div>
+              </div>
+        </div>
+    </div><!--End of row-->
+    <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-8">
+            <div class="card">
+                <div class="card-body">
+                  Child Victims
+                </div>
+              </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-8">
+            <div class="card">
+                <div class="card-body">
+                  Open Cases
+                </div>
+              </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-8">
+            <div class="card">
+                <div class="card-body">
+                  Close Cases
+                </div>
+              </div>
+        </div>
+    </div><!--End of row-->
+
+    <div class="row">
+      <div class="col-lg-6 col-md-6 col-sm-8">
+        <div class="card">
+          <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-8">
+                  <div class="card-body">Suspects</div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-8 pt-4">
+                  <select class="form-select" aria-label="Default select example">
+                    <option value="2024">2024</option>
+                    <option value="2023">2023</option>
+                    <option value="2022">2022</option>
+                    <option value="2021">2021</option>
+                  </select>
+                </div>
+              </div>
+            </div> 
+          </div><!--Done of first col-->
+
+      <div class="col-lg-6 col-md-6 col-sm-8">
+        <div class="card">
+          <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-8">
+              <div class="card-body">Victims Overview</div>
+            </div>
+          <div class="col-lg-4 col-md-4 col-sm-8 pt-4">
+            <select class="form-select" aria-label="Default select example">
+              <option value="2024">2024</option>
+              <option value="2023">2023</option>
+              <option value="2022">2022</option>
+              <option value="2021">2021</option>
+            </select>
+          </div>
+        </div>
+        </div>
+      </div><!--Done of second col-->
+    </div><!--End of row-->
+
+
+    <div class="row">
+      <div class="card pb-3">
+        <div class="card-body">Open Cases</div>
+        <div class="list-group">
+          <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+            The current link item
+          </a>
+          <a href="#" class="list-group-item list-group-item-action">A second link item</a>
+          <a href="#" class="list-group-item list-group-item-action">A third link item</a>
+          <a href="#" class="list-group-item list-group-item-action">A fourth link item</a>
+        </div>
+      </div>
+    </div><!--End of row-->
+</div><!--content-->
+
+{% endblock %}
+{% endblock content %}
