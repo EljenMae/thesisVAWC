@@ -13,7 +13,9 @@ urlpatterns = [
     path('done-setpass/', views.doneSetPass, name="Password Set Up Done"),
     path('barangay/dashboard', views.barangay, name="barangay"),
     path('barangay/report', views.barreport, name="barangay report"),
-    path('barangay/addreport', views.addreport, name="barangay add report"),
+    path('barangay/victimInform', views.victimInfo, name="barangay victim info"),
+    path('barangay/perpetInform', views.perpetInfo, name="barangay perpetrator info"),
+    path('barangay/IncidentInform', views.incidentInfo, name="barangay incident info"),
     path('police/dashboard', views.police, name="police"),
     path('dswd/dashboard', views.dswd, name="dswd"),
     

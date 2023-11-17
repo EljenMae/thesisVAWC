@@ -34,9 +34,14 @@ def barangay(request):
 def barreport(request):
     return render(request, 'vawc/barangay/barangay-report.html')
 
-def addreport(request):
-    return render(request, 'vawc/barangay/barangay-addreport.html')
+def victimInfo(request):
+    return render(request, 'vawc/barangay/barangay-victimInfo.html')
 
+def perpetInfo(request):
+    return render(request, 'vawc/barangay/barangay-perpetInfo.html')
+
+def incidentInfo(request):
+    return render(request, 'vawc/barangay/barangay-incidentInfo.html')
 # Police side.
 def police(request):
     return render(request, 'vawc/police/police-dashboard.html')
