@@ -42,6 +42,13 @@ def perpetInfo(request):
 
 def incidentInfo(request):
     return render(request, 'vawc/barangay/barangay-incidentInfo.html')
+
+def geoLocInci(request):
+    return render(request, 'vawc/barangay/barangay-geoLocInci.html')
+
+def servicesInfo(request):
+    return render(request, 'vawc/barangay/barangay-servicesInfo.html')
+
 # Police side.
 def police(request):
     return render(request, 'vawc/police/police-dashboard.html')
