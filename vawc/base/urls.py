@@ -16,7 +16,6 @@ urlpatterns = [
     path('barangay/victimInform', views.victimInfo, name="barangay victim info"),
     path('barangay/perpetInform', views.perpetInfo, name="barangay perpetrator info"),
     path('barangay/IncidentInform', views.incidentInfo, name="barangay incident info"),
-    path('barangay/GeographicIncident', views.geoLocInci, name="barangay geographic location of incident"),
     path('barangay/servicesInfo', views.servicesInfo, name="barangay services info"),
     
     path('police/dashboard', views.police, name="police"),
