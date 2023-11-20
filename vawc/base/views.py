@@ -46,6 +46,10 @@ def incidentInfo(request):
 def servicesInfo(request):
     return render(request, 'vawc/barangay/barangay-servicesInfo.html')
 
+#  bpo.
+def bpo(request):
+    return render(request, 'vawc/barangay/barangay-bpo.html')
+
 # Police side.
 def police(request):
     return render(request, 'vawc/police/police-dashboard.html')

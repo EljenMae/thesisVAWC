@@ -1,0 +1,126 @@
+{% extends "barangay-main.html" %}
+
+
+{% block content %}
+{% block static %}
+{% load static %}
+
+<div class="container pt-5">
+    <div class="pt-4">
+        <a class="text-decoration-none" href="{% url 'barangay services info' %}" role="button"><i class='bx bx-arrow-back'></i> Back</a>
+    </div>
+
+    <div class="container pt-3">
+        <h1 class="pt-3 text-center">BPO Application Form</h1>
+        <h5 class="text-center">Republic of the Philippines</h5>
+        <h5 class="text-center">Province of _______</h5>
+        <h5 class="text-center">City / Municipality _______</h5>
+        <h5 class="text-center">Barangay _______</h5>
+
+        <h5 class="pt-5 text-center">APPLICATION FOR BARANGAY PROTECTION ORDER</h5>
+        
+        <div class="row pt-5">
+            <div class="col-lg-6 col-md-6 col-sm-8">
+                <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput">1. Name of Applicant</label>
+                  </div>
+            </div><!--End of col-->
+            <div class="col-lg-6 col-md-6 col-sm-8">
+                <div class="form-floating mb-3">
+                    <input type="date" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput">Date of Birth</label>
+                  </div>
+            </div><!--End of col-->
+        </div><!--End of row-->
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-8">
+                <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput">Address</label>
+                  </div>
+            </div><!--End of col-->
+            <div class="col-lg-6 col-md-6 col-sm-8">
+                <div class="form-floating mb-3">
+                    <input type="number" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput">Tel.No</label>
+                  </div>
+            </div><!--End of col-->
+        </div><!--End of row-->
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-8">
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput">Relationship to Victim/s</label>
+                  </div>
+            </div><!--End of col-->
+            <div class="col-lg-6 col-md-6 col-sm-8">
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput">Occupation</label>
+                  </div>
+            </div><!--End of col-->
+        </div><!--End of row--> 
+        <div class="row pt-5">
+            <div class="col-lg-6 col-md-6 col-sm-8">
+                <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput">2. Name of Victim/s</label>
+                  </div>
+            </div><!--End of col-->
+            <div class="col-lg-6 col-md-6 col-sm-8">
+                <div class="form-floating mb-3">
+                    <input type="date" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput">Date/s of Birth</label>
+                  </div>
+            </div><!--End of col-->
+        </div><!--End of row-->
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-8">
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput">Address</label>
+                  </div>
+            </div><!--End of col-->
+            <div class="col-lg-6 col-md-6 col-sm-8">
+                <div class="form-floating mb-3">
+                    <input type="number" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput">Tel.No</label>
+                  </div>
+            </div><!--End of col-->
+        </div><!--End of row-->
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-8">
+                <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput">Occupation / Source of Income</label>
+                  </div>
+            </div><!--End of col-->
+            <div class="col-lg-6 col-md-6 col-sm-8">
+                <div class="form-floating">
+                    <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                        <option value="single">Single</option>
+                        <option value="married">Married</option>
+                        <option value="widower">Widower</option>
+                        <option value="separated">Separated</option>
+                        <option value="legally separated">Legally Separated</option>
+                    </select>
+                    <label for="floatingSelect">Civil Status</label>
+                  </div>
+            </div><!--End of col-->
+        </div><!--End of row-->
+
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-8">
+                <button class="btn btn-primary" type="submit">Add Victims</button>
+            </div>
+        </div><!--End of row-->
+        
+        
+    </div><!--End of container-->
+</div><!--End of container-->
+
+
+
+{% endblock %}
+{% endblock content %}

@@ -18,6 +18,8 @@ urlpatterns = [
     path('barangay/IncidentInform', views.incidentInfo, name="barangay incident info"),
     path('barangay/servicesInfo', views.servicesInfo, name="barangay services info"),
     
+    path('barangay/bpo', views.bpo, name="barangay bpo"),
+    
     path('police/dashboard', views.police, name="police"),
     path('dswd/dashboard', views.dswd, name="dswd"),
     
