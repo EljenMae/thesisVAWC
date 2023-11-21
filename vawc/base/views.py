@@ -46,6 +46,13 @@ def incidentInfo(request):
 def servicesInfo(request):
     return render(request, 'vawc/barangay/barangay-servicesInfo.html')
 
+
+def myProfile(request):
+    return render(request, 'vawc/barangay/barangay-myprofile.html')
+
+def settings(request):
+    return render(request, 'vawc/barangay/barangay-settings.html')
+
 #  bpo.
 def bpo(request):
     return render(request, 'vawc/barangay/barangay-bpo.html')

@@ -18,6 +18,10 @@ urlpatterns = [
     path('barangay/IncidentInform', views.incidentInfo, name="barangay incident info"),
     path('barangay/servicesInfo', views.servicesInfo, name="barangay services info"),
     
+    path('barangay/myprofile', views.myProfile, name="barangay my profile"),
+    
+    path('barangay/settings', views.settings, name="barangay settings"),
+    
     path('barangay/bpo', views.bpo, name="barangay bpo"),
     
     path('police/dashboard', views.police, name="police"),
