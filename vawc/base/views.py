@@ -46,6 +46,8 @@ def incidentInfo(request):
 def servicesInfo(request):
     return render(request, 'vawc/barangay/barangay-servicesInfo.html')
 
+def referred(request):
+    return render(request, 'vawc/barangay/barangay-referred.html')
 
 def myProfile(request):
     return render(request, 'vawc/barangay/barangay-myprofile.html')

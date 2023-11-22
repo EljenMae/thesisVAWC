@@ -1,0 +1,38 @@
+{% extends "barangay-main.html" %}
+
+
+{% block content %}
+{% block static %}
+{% load static %}
+
+<div class="container pt-5 pb-5">
+    <div class="pt-4">
+        <a class="text-decoration-none" href="{% url 'barangay services info' %}" role="button"><i class='bx bx-arrow-back'></i> Back</a>
+    </div>
+
+    <div class="container pt-5">
+        <h1 class="pt-3 text-center">Referred Form</h1>
+
+        <div class="row pt-3">
+            <div class="col-lg-6 col-md-6 col-sm-8 pt-3">
+                <div class="form-floating">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="Zamboanga Del Sur">
+                    <label for="floatingInput">Case No:</label>
+                </div>
+            </div><!--End of column-->
+            <div class="col-lg-6 col-md-6 col-sm-8 pt-3">
+                <div class="form-floating">
+                    <input type="date" class="form-control" id="floatingInput" placeholder="Zamboanga Del Sur">
+                    <label for="floatingInput">Date of Referral:</label>
+                </div>
+            </div><!--End of column-->
+        </div><!--End of row-->
+
+
+    </div><!--End of container 1-->
+</div><!--End or container-->
+
+
+
+{% endblock %}
+{% endblock content %}

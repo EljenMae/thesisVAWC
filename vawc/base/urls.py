@@ -17,6 +17,8 @@ urlpatterns = [
     path('barangay/perpetInform', views.perpetInfo, name="barangay perpetrator info"),
     path('barangay/IncidentInform', views.incidentInfo, name="barangay incident info"),
     path('barangay/servicesInfo', views.servicesInfo, name="barangay services info"),
+    path('barangay/referred', views.referred, name="barangay referred"),
+    
     
     path('barangay/myprofile', views.myProfile, name="barangay my profile"),
     
