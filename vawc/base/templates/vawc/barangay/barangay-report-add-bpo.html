@@ -1,0 +1,356 @@
+{% extends "barangay-main.html" %}
+
+
+{% block content %}
+{% block static %}
+{% load static %}
+
+<div class="container pt-5">
+    <div class="pt-4">
+        <a class="text-decoration-none" href="{% url 'barangay services info' %}" role="button"><i class='bx bx-arrow-back'></i> Back</a>
+    </div>
+
+    <div class="container pt-3 pb-3">
+        <h1 class="pt-3 text-center">BPO Application Form</h1>
+        <h5 class="text-center">Republic of the Philippines</h5>
+        <h5 class="text-center">Province of _______</h5>
+        <h5 class="text-center">City / Municipality _______</h5>
+        <h5 class="text-center">Barangay _______</h5>
+
+        <h5 class="pt-5 text-center">APPLICATION FOR BARANGAY PROTECTION ORDER</h5>
+        
+        <div class="row pt-5">
+            <div class="col-lg-6 col-md-6 col-sm-8">
+                <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput">1. Name of Applicant:</label>
+                  </div>
+            </div><!--End of col-->
+            <div class="col-lg-6 col-md-6 col-sm-8">
+                <div class="form-floating mb-3">
+                    <input type="date" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput">Date of Birth:</label>
+                  </div>
+            </div><!--End of col-->
+        </div><!--End of row-->
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-8">
+                <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput">Address:</label>
+                  </div>
+            </div><!--End of col-->
+            <div class="col-lg-6 col-md-6 col-sm-8">
+                <div class="form-floating mb-3">
+                    <input type="number" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput">Tel.No:</label>
+                  </div>
+            </div><!--End of col-->
+        </div><!--End of row-->
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-8">
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput">Relationship to Victim/s:</label>
+                  </div>
+            </div><!--End of col-->
+            <div class="col-lg-6 col-md-6 col-sm-8">
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput">Occupation:</label>
+                  </div>
+            </div><!--End of col-->
+        </div><!--End of row--> 
+        <div class="row pt-5">
+            <div class="col-lg-6 col-md-6 col-sm-8">
+                <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput">2. Name of Victim:</label>
+                  </div>
+            </div><!--End of col-->
+            <div class="col-lg-6 col-md-6 col-sm-8">
+                <div class="form-floating mb-3">
+                    <input type="date" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput">Date/s of Birth:</label>
+                  </div>
+            </div><!--End of col-->
+        </div><!--End of row-->
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-8">
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput">Address:</label>
+                  </div>
+            </div><!--End of col-->
+            <div class="col-lg-6 col-md-6 col-sm-8">
+                <div class="form-floating mb-3">
+                    <input type="number" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput">Tel.No:</label>
+                  </div>
+            </div><!--End of col-->
+        </div><!--End of row-->
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-8">
+                <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput">Occupation / Source of Income:</label>
+                  </div>
+            </div><!--End of col-->
+            <div class="col-lg-6 col-md-6 col-sm-8">
+                <div class="form-floating">
+                    <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                        <option value="single">Single</option>
+                        <option value="married">Married</option>
+                        <option value="widower">Widower</option>
+                        <option value="separated">Separated</option>
+                        <option value="legally separated">Legally Separated</option>
+                    </select>
+                    <label for="floatingSelect">Civil Status:</label>
+                  </div>
+            </div><!--End of col-->
+        </div><!--End of row-->
+
+        <div class="d-grid gap-2 pt-3">
+            <button class="btn btn-primary" type="button"><i class="bi bi-plus"></i></button>
+          </div>
+
+        <div class="row pt-5">
+            <div class="col-lg-4 col-md-4 col-sm-8">
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput">3. Name of Children:</label>
+                  </div>
+            </div><!--End of col-->
+            <div class="col-lg-4 col-md-4 col-sm-8">
+                <div class="form-floating mb-3">
+                    <input type="date" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput">Date of Birth:</label>
+                  </div>
+            </div><!--End of col-->
+            <div class="col-lg-4 col-md-4 col-sm-8">
+                <div class="form-floating">
+                    <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                        <option value="single">Female</option>
+                        <option value="married">Male</option>
+                    </select>
+                    <label for="floatingSelect">Sex:</label>
+                  </div>
+            </div><!--End of col-->
+        </div><!--End of row-->
+        <div class="d-grid gap-2">
+            <button class="btn btn-primary" type="button"><i class="bi bi-plus"></i></button>
+          </div>
+          <div class="row pt-5">
+            <div class="col-lg-4 col-md-4 col-sm-8">
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput">Other children under her care:</label>
+                  </div>
+            </div><!--End of col-->
+            <div class="col-lg-4 col-md-4 col-sm-8">
+                <div class="form-floating mb-3">
+                    <input type="date" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput">Date of Birth:</label>
+                  </div>
+            </div><!--End of col-->
+            <div class="col-lg-4 col-md-4 col-sm-8">
+                <div class="form-floating">
+                    <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                        <option value="single">Female</option>
+                        <option value="married">Male</option>
+                    </select>
+                    <label for="floatingSelect">Sex:</label>
+                  </div>
+            </div><!--End of col-->
+        </div><!--End of row-->
+        <div class="d-grid gap-2 pt-3">
+            <button class="btn btn-primary" type="button"><i class="bi bi-plus"></i></button>
+          </div>
+          <div class="row pt-5">
+            <div class="col-lg-4 col-md-4 col-sm-8">
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput">4. Name of Respondent:</label>
+                  </div>
+            </div><!--End of col-->
+            <div class="col-lg-4 col-md-4 col-sm-8">
+                <div class="form-floating mb-3">
+                    <input type="date" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput">Date of Birth:</label>
+                  </div>
+            </div><!--End of col-->
+            <div class="col-lg-4 col-md-4 col-sm-8 pb-3">
+                <div class="form-floating">
+                    <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                        <option value="single">Female</option>
+                        <option value="married">Male</option>
+                    </select>
+                    <label for="floatingSelect">Sex:</label>
+                  </div>
+            </div><!--End of col-->
+        </div><!--End of row-->
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-8">
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput">Address:</label>
+                  </div>
+            </div><!--End of col-->
+            <div class="col-lg-6 col-md-6 col-sm-8">
+                <div class="form-floating mb-3">
+                    <input type="number" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput">Tel.No:</label>
+                  </div>
+            </div><!--End of col-->
+        </div><!--End of row-->
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-8">
+                <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput">Occupation / Source of Income:</label>
+                  </div>
+            </div><!--End of col-->
+            <div class="col-lg-6 col-md-6 col-sm-8 pb-3">
+                <div class="form-floating">
+                    <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                        <option value="single">Single</option>
+                        <option value="married">Married</option>
+                        <option value="widower">Widower</option>
+                        <option value="separated">Separated</option>
+                        <option value="legally separated">Legally Separated</option>
+                    </select>
+                    <label for="floatingSelect">Civil Status:</label>
+                  </div>
+            </div><!--End of col-->
+          </div><!--End of row-->
+
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-8">
+                <div class="form-floating">
+                    <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                        <option value="wife">Wife</option>
+                        <option value="formerWife">Former Wife</option>
+                        <option value="liveinRelationship">Live-in Relationship</option>
+                        <option value="separated">Dating Relationship</option>
+                        <option value="married">Sexual Relationship</option>
+                    </select>
+                    <label for="floatingSelect">5. Relationship of victim to respondent:</label>
+                  </div>
+            </div><!--End of col-->
+          </div><!--Emd of row-->
+
+          
+          <div class="row pt-5">
+            <h5>6. Acts of complained of:</h5>
+            <div class="col-lg-6 col-md-6 col-sm-8 pt-2">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">Threats</label>
+              </div><!--End of col-->
+              <div class="col-lg-6 col-md-6 col-sm-8 pt-2">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">Physical Injuries</label>
+              </div><!--End of col-->
+          </div><!--End of row-->
+
+          <div class="mb-3 pt-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Description:</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div><!--End of description-->
+
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-8">
+                <div class="form-floating mb-3">
+                    <input type="date" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput">7. Date/s of Commission:</label>
+                  </div>
+            </div><!--End of col-->
+            <div class="col-lg-6 col-md-6 col-sm-8">
+                <div class="form-floating mb-3">
+                    <input type="number" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput">8. Place/s of Commission:</label>
+                  </div>
+            </div><!--End of col-->
+        </div><!--End of row-->
+
+        <div class="mb-3 pt-3">
+            <label for="exampleFormControlTextarea1" class="form-label">9. If applicant is not the victim, state the circumstances of consent:</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div><!--End of description-->
+
+          <div class="row pt-3">
+            <div class="col-lg-6 col-md-6 col-sm-8 pb-3">
+                <div class="col-lg-12 col-md-12 col-sm-8">
+                    <div class="col-lg-6 col-md-6 col-sm-8">
+                        <hr class="w-100">
+                    </div><!--End of whatever-->
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-8 py-0">
+                            <p class="text-center">Applicant</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-8 py-0">
+                            <p class="text-center">Signature over printed name</p>
+                        </div>
+                    </div>  
+                </div><!--new col-->
+            </div><!--End of col-->
+            <div class="col-lg-6 col-md-6 col-sm-8 pb-3">
+                <div class="col-lg-12 col-md-12 col-sm-8">
+                    <div class="col-lg-6 col-md-6 col-sm-8">
+                        <hr class="w-100">
+                    </div><!--End of whatever-->
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-8 py-0">
+                            <p class="text-center">Date</p>
+                        </div>
+                    </div> 
+                </div><!--new col-->
+            </div><!--End of col-->
+        </div><!--End of row-->
+
+          <hr class="pt-3">
+          <h4 class="text-center"><strong>VERIFICATION OF THE PUNONG BARANGAY<strong></h3>
+          <p class="pt-2">I certify that the applicant for BPO who personanally appeared before me is a bonifide resident of this barangay and is the same person who supplied all the above information and attest to the correctness of said information.</p>
+
+        <div class="row pt-3">
+            <div class="d-grid d-md-flex justify-content-md-end">
+            <div class="col-lg-6 col-md-6 col-sm-8">
+                <div class="col-lg-12 col-md-12 col-sm-8">
+                    <div class="col-lg-6 col-md-6 col-sm-8">
+                        <hr class="w-100">
+                    </div><!--End of whatever-->
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-8 py-0">
+                            <p class="text-center">Punong Barangay</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-8 py-0">
+                            <p class="text-center">Signature over Printed Name</p>
+                        </div>
+                    </div> 
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-8 py-0">
+                            <p class="text-center">Date Issued:</p>
+                        </div>
+                    </div>  
+                </div><!--new col-->
+            </div><!--End col -->
+        </div><!--Justify end-->
+        </div><!--End of row-->
+   
+
+          <div class="d-grid gap-2 d-md-flex justify-content-md-end pt-5 pb-3">
+            <a class="btn btn-outline-primary me-md-2" href="#" role="button">Print</a>
+            <a class="btn btn-primary" href="#" role="button">Save</a>
+        </div><!--end of buttons-->
+        
+        
+    </div><!--End of container-->
+</div><!--End of container-->
+
+
+
+{% endblock %}
+{% endblock content %}

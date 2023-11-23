@@ -56,8 +56,14 @@ def settings(request):
     return render(request, 'vawc/barangay/barangay-settings.html')
 
 #  bpo.
+def reportAddBpo(request):
+    return render(request, 'vawc/barangay/barangay-report-add-bpo.html')
+
 def bpo(request):
     return render(request, 'vawc/barangay/barangay-bpo.html')
+
+def addBpo(request):
+    return render(request, 'vawc/barangay/barangay-add-bpo.html')
 
 # Police side.
 def police(request):

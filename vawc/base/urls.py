@@ -15,16 +15,29 @@ urlpatterns = [
     path('barangay/report', views.barreport, name="barangay report"),
     path('barangay/victimInform', views.victimInfo, name="barangay victim info"),
     path('barangay/perpetInform', views.perpetInfo, name="barangay perpetrator info"),
+    
     path('barangay/IncidentInform', views.incidentInfo, name="barangay incident info"),
+    
     path('barangay/servicesInfo', views.servicesInfo, name="barangay services info"),
+    
+    path('barangay/report/add-bpo', views.reportAddBpo, name="barangay report add bpo"),
+    
     path('barangay/referred', views.referred, name="barangay referred"),
     
+    path('barangay/bpo', views.bpo, name="barangay bpo"),
+    
+    path('barangay/add-bpo', views.addBpo, name="barangay add bpo"),
     
     path('barangay/myprofile', views.myProfile, name="barangay my profile"),
     
     path('barangay/settings', views.settings, name="barangay settings"),
     
-    path('barangay/bpo', views.bpo, name="barangay bpo"),
+    
+   
+    
+    
+    
+ 
     
     path('police/dashboard', views.police, name="police"),
     path('dswd/dashboard', views.dswd, name="dswd"),
