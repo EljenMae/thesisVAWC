@@ -6,9 +6,20 @@ from django.shortcuts import render
 def home(request):
     return render(request, 'vawc/home.html')
 
+#  report.
 def report(request):
     return render(request, 'vawc/report.html')
 
+def impactVictim(request):
+    return render(request, 'vawc/impacted-victim.html')
+
+def impactPerpetrator(request):
+    return render(request, 'vawc/impacted-perpetrator.html')
+
+def impactIncident(request):
+    return render(request, 'vawc/impacted-incident.html')
+
+#  end of report.
 def login(request):
     return render(request, 'vawc/login.html')
 

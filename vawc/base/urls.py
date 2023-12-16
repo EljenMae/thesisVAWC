@@ -5,6 +5,14 @@ from . import views
 urlpatterns = [
     path('', views.home, name="home"),
     path('report/', views.report, name="report"),
+    
+    path('impact-victim-survivor/', views.impactVictim, name="impact victim"),
+    
+    path('impact-perpetrator/', views.impactPerpetrator, name="impact perpetrator"),
+    
+    path('impact-incident/', views.impactIncident, name="impact incident"),
+    
+    
     path('login/', views.login, name="login"),
     path('signup/', views.signup, name="signup"),
     path('forgot-pass/', views.forgotpass, name="forgot password"),
