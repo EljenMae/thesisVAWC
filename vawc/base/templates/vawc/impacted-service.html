@@ -1,0 +1,31 @@
+{% extends "main.html" %}
+{% block content %}
+
+<div class="container pt-5 pb-5">
+    <div class="card">
+      <div class="card-body">
+
+        <div class="pt-3">
+            <a class="text-decoration-none" href="{% url 'impact perpetrator' %}" role="button"><i class='bx bx-arrow-back'></i> Back</a>
+        </div><!--End of button-->
+        <h1 class="text-center pt-3"><strong>File a VAWC Report</strong></h1>
+
+
+        <h1 class="text-center pt-3"><strong>Service Information</strong></h1>
+
+        <div class="row pt-5 pb-3">
+            <div class="col-lg-6 col-md-6 col-sm-8">
+                <a class="btn btn-primary w-100" href="{% url 'impact crisis' %}" role="button">Crisis Intervention Including Rescue</a>
+            </div><!--End of col-->
+            <div class="col-lg-6 col-md-6 col-sm-8">
+                <a class="btn btn-primary w-100" href="{% url 'impact issuance' %}" role="button">Issuance / Enforcement of Barangay Protection Order</a>
+            </div><!--End of col-->
+            
+        </div><!--End of row-->
+
+       
+      </div><!--end of card body-->
+    </div><!--end of card-->
+  </div><!--end of container-->
+
+{% endblock content %}

@@ -19,6 +19,16 @@ def impactPerpetrator(request):
 def impactIncident(request):
     return render(request, 'vawc/impacted-incident.html')
 
+def impactService(request):
+    return render(request, 'vawc/impacted-service.html')
+
+
+def impactCrisis(request):
+    return render(request, 'vawc/impacted-crisis.html')
+
+def impactIssuance(request):
+    return render(request, 'vawc/impacted-issuance.html')
+
 #  end of report.
 def login(request):
     return render(request, 'vawc/login.html')
@@ -60,8 +70,12 @@ def servicesInfo(request):
 def referred(request):
     return render(request, 'vawc/barangay/barangay-referred.html')
 
+
+
 def myProfile(request):
     return render(request, 'vawc/barangay/barangay-myprofile.html')
+
+
 
 def settings(request):
     return render(request, 'vawc/barangay/barangay-settings.html')

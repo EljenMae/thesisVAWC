@@ -12,6 +12,12 @@ urlpatterns = [
     
     path('impact-incident/', views.impactIncident, name="impact incident"),
     
+    path('impact-service/', views.impactService, name="impact service"),
+    
+    path('impact-crisis/', views.impactCrisis, name="impact crisis"),
+    
+    path('impact-issuance/', views.impactIssuance, name="impact issuance"),
+    
     
     path('login/', views.login, name="login"),
     path('signup/', views.signup, name="signup"),
