@@ -18,6 +18,8 @@ urlpatterns = [
     
     path('impact-issuance/', views.impactIssuance, name="impact issuance"),
     
+    path('behalf-contact-Person/', views.behalfContactPerson, name="behalf contact person"),
+    
     
     path('login/', views.login, name="login"),
     path('signup/', views.signup, name="signup"),
