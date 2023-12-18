@@ -32,6 +32,9 @@ def impactIssuance(request):
 def behalfContactPerson(request):
     return render(request, 'vawc/behalf-contactPerson.html')
 
+def behalfVictim(request):
+    return render(request, 'vawc/behalf-victim.html')
+
 #  end of report.
 def login(request):
     return render(request, 'vawc/login.html')

@@ -20,6 +20,7 @@ urlpatterns = [
     
     path('behalf-contact-Person/', views.behalfContactPerson, name="behalf contact person"),
     
+    path('behalf-victim/', views.behalfVictim, name="behalf victim"),
     
     path('login/', views.login, name="login"),
     path('signup/', views.signup, name="signup"),
