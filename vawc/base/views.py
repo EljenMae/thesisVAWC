@@ -35,6 +35,21 @@ def behalfContactPerson(request):
 def behalfVictim(request):
     return render(request, 'vawc/behalf-victim.html')
 
+def behalfPerpetrator(request):
+    return render(request, 'vawc/behalf-perpetrator.html')
+
+def behalfIncident(request):
+    return render(request, 'vawc/behalf-incident.html')
+
+def behalfService(request):
+    return render(request, 'vawc/behalf-service.html')
+
+def behalfCrisis(request):
+    return render(request, 'vawc/behalf-crisis.html')
+
+def behalfIssuance(request):
+    return render(request, 'vawc/behalf-issuance.html')
+
 #  end of report.
 def login(request):
     return render(request, 'vawc/login.html')

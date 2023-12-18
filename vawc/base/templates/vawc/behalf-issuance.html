@@ -1,0 +1,26 @@
+{% extends "main.html" %}
+
+
+{% block content %}
+
+
+<div class="container pt-5 pb-5">
+    <div class="card">
+      <div class="card-body">
+        
+        <h1 class="text-center pt-3"><strong>File a VAWC Report</strong></h1>
+
+
+        <h1 class="text-center pt-3"><strong>Issuance / Enforcement of Barangay Protection Order</strong></h1>
+
+        <p class="pt-5 pb-5 fs-4 text-center">Thank you for your request for an Issuance / Barangay Protection Order. Your concern is important to us, and we'll handle it with care and confidentiality. Our team will review the details and take necessary steps to address the situation promptly. Your courage in seeking assistance is appreciated!</p>
+       
+        <a class="btn btn-primary w-100" href="{% url 'home' %}" role="button">Done</a>
+
+      </div><!--end of card body-->
+    </div><!--end of card-->
+  </div><!--end of container-->
+
+
+
+{% endblock content %}

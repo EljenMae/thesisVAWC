@@ -22,6 +22,16 @@ urlpatterns = [
     
     path('behalf-victim/', views.behalfVictim, name="behalf victim"),
     
+    path('behalf-perpetrator/', views.behalfPerpetrator, name="behalf perpetrator"),
+    
+    path('behalf-incident/', views.behalfIncident, name="behalf incident"),
+    
+    path('behalf-service/', views.behalfService, name="behalf service"),
+    
+    path('behalf-crisis/', views.behalfCrisis, name="behalf crisis"),
+    
+    path('behalf-issuance/', views.behalfIssuance, name="behalf issuance"),
+    
     path('login/', views.login, name="login"),
     path('signup/', views.signup, name="signup"),
     path('forgot-pass/', views.forgotpass, name="forgot password"),

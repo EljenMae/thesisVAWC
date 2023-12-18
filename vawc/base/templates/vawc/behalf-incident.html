@@ -1,0 +1,123 @@
+{% extends "main.html" %}
+
+
+{% block content %}
+
+
+<div class="container pt-5 pb-5">
+    <div class="card">
+      <div class="card-body">
+        <div class="pt-3">
+            <a class="text-decoration-none" href="{% url 'behalf perpetrator' %}" role="button"><i class='bx bx-arrow-back'></i> Back</a>
+        </div><!--End of button-->
+        <h1 class="text-center pt-3"><strong>File a VAWC Report</strong></h1>
+
+
+        <h1 class="text-center pt-3"><strong>Incident Information</strong></h1>
+
+        <div class="row pt-5 pb-3">
+            <div class="col-lg-4 col-md-4 col-sm-8">
+                <label for="victim-city" class="form-label"><strong>Date of Lates Incident: </strong></label>
+            </div><!--end of col-->
+            <div class="col-lg-4 col-md-4 col-sm-8">
+                <input type="date" class="form-control" id="victim-city">
+              </div><!--emd of col-->
+
+              <div class="col-lg-4 col-md-4 col-sm-8 pt-2">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                    <label class="form-check-label" for="flexCheckChecked">
+                      Incomplete Date
+                    </label>
+                  </div>
+              </div><!--emd of col-->
+        </div><!--end of row-->
+
+        <div class="row pt-3 pb-3">
+            <h5 class="pb-3"><strong>Place of Incident</strong></h5>
+            <div class="col-lg-4 col-md-4 col-sm-8 pb-2">
+                <label for="victim-region" class="form-label">Type of place of incident: </label>
+                  <select id="victim-region" class="form-select">
+                    <option value="house">House</option>
+                    <option value="work">Work</option>
+                    <option value="school">School</option>
+                    <option value="commercialPlaces">Commercial Places</option>
+                    <option value="religion">Religion Institutions</option>
+                    <option value="placeOfMedicalTreatment">Place of Medical Treatment</option>
+                    <option value="transport">Transport & Connecting Sites</option>
+                    <option value="brothles">Brothles and Similar Establishments</option>
+                    <option value="others">Others</option>
+                    <option value="noResponse">No Response</option>
+                </select>
+              </div><!--end of col-->
+
+              <div class="col-lg-4 col-md-4 col-sm-8 pb-2">
+                <label for="victim-street" class="form-label">Street: </label>
+                <input type="text" class="form-control" id="victim-street">
+              </div><!--end of col-->
+
+              <div class="col-lg-4 col-md-4 col-sm-8">
+                <label for="victim-barangay" class="form-label">Barangay: </label>
+                <input type="text" class="form-control" id="victim-barangay">
+              </div><!--End of col-->
+        </div><!--end of row-->
+
+        <div class="row pt-3 pb-3">
+            <div class="col-lg-4 col-md-4 col-sm-8">
+                <label for="victim-province" class="form-label">Province: </label>
+                <input type="text" class="form-control" id="victim-province">
+              </div><!--end of col-->
+              <div class="col-lg-4 col-md-4 col-sm-8">
+                <label for="victim-city" class="form-label">City / Mun: </label>
+                <input type="text" class="form-control" id="victim-city">
+              </div><!--emd of col-->
+              <div class="col-lg-4 col-md-4 col-sm-8 pb-2">
+                <label for="victim-region" class="form-label">Region: </label>
+                  <select id="victim-region" class="form-select">
+                    <option value="region-I">Region I – Ilocos Region</option>
+                    <option value="region-II">Region II – Cagayan Valley</option>
+                    <option value="region-III">Region III – Central Luzon</option>
+                    <option value="region-IV">Region IV‑A – CALABARZON</option>
+                    <option value="mimaropa">MIMAROPA Region</option>
+                    <option value="region-V">Region V – Bicol Region</option>
+                    <option value="region-VI">Region VI – Western Visayas</option>
+                    <option value="region-VII">Region VII – Central Visayas</option>
+                    <option value="region-VIII">Region VIII – Eastern Visayas</option>
+                    <option value="region-IX">Region IX – Zamboanga Peninsula</option>
+                    <option value="region-X">Region X – Northern Mindanao</option>
+                    <option value="region-XI">Region XI – Davao Region</option>
+                    <option value="region-XII">Region XII – SOCCSKSARGEN</option>
+                    <option value="region-XIII">Region XIII – Caraga</option>
+                    <option value="ncr">NCR – National Capital Region</option>
+                    <option value="car">CAR – Cordillera Administrative Region</option>
+                    <option value="barmm">BARMM – Bangsamoro Autonomous Region in Muslim Mindanao</option>
+                </select>
+              </div><!--end of col-->
+            </div><!--end of row-->
+
+            <div class="row pt-3 pb-3">
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label"><strong>Description of Incident:</strong></label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  </div><!--for textbox-->
+        </div><!--End or row-->
+
+        <div class="row pt-3+">
+            <div class="mb-3">
+                <label for="formFileMultiple" class="form-label"><strong>Upload Evidences:</strong></label>
+                <input class="form-control" type="file" id="formFileMultiple" multiple>
+              </div><!--form to upload-->
+    </div><!--End or row-->
+
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end pt-5">
+              <a class="btn btn-outline-primary me-md-2" href="{% url 'behalf perpetrator' %}" role="button">Back</a>
+              <a class="btn btn-primary" href="{% url 'behalf service' %}" role="button">Next</a>
+          </div><!--end of buttons-->
+
+      </div><!--end of card body-->
+    </div><!--end of card-->
+  </div><!--end of container-->
+
+
+
+{% endblock content %}
