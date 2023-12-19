@@ -33,11 +33,7 @@ urlpatterns = [
     path('behalf-issuance/', views.behalfIssuance, name="behalf issuance"),
     
     path('login/', views.login, name="login"),
-    path('signup/', views.signup, name="signup"),
-    path('forgot-pass/', views.forgotpass, name="forgot password"),
-    path('send-code/', views.code, name="send code"),
-    path('new-pass/', views.newpass, name="new password"),
-    path('done-setpass/', views.doneSetPass, name="Password Set Up Done"),
+
     path('barangay/dashboard', views.barangay, name="barangay"),
     path('barangay/report', views.barreport, name="barangay report"),
     path('barangay/victimInform', views.victimInfo, name="barangay victim info"),
@@ -47,7 +43,9 @@ urlpatterns = [
     
     path('barangay/servicesInfo', views.servicesInfo, name="barangay services info"),
     
-    path('barangay/report/add-bpo', views.reportAddBpo, name="barangay report add bpo"),
+    path('barangay/add-crisis', views.servicesAddCrisis, name="barangay services add crisis"),
+    
+    path('barangay/add-bpo', views.servicesAddBPO, name="barangay services add bpo"),
     
     path('barangay/referred', views.referred, name="barangay referred"),
     
@@ -55,6 +53,7 @@ urlpatterns = [
     
     path('barangay/add-bpo', views.addBpo, name="barangay add bpo"),
     
+
     path('barangay/myprofile', views.myProfile, name="barangay my profile"),
     
     path('barangay/settings', views.settings, name="barangay settings"),
@@ -64,9 +63,5 @@ urlpatterns = [
     
     
     
- 
-    
-    path('police/dashboard', views.police, name="police"),
-    path('dswd/dashboard', views.dswd, name="dswd"),
-    
+
 ]

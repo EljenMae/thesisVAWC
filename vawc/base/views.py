@@ -22,7 +22,6 @@ def impactIncident(request):
 def impactService(request):
     return render(request, 'vawc/impacted-service.html')
 
-
 def impactCrisis(request):
     return render(request, 'vawc/impacted-crisis.html')
 
@@ -51,28 +50,16 @@ def behalfIssuance(request):
     return render(request, 'vawc/behalf-issuance.html')
 
 #  end of report.
+
+#  log-in.
 def login(request):
     return render(request, 'vawc/login.html')
-
-def signup(request):
-    return render(request, 'vawc/signup.html')
-
-def forgotpass(request):
-    return render(request, 'vawc/forgot-pass.html')
-
-def code(request):
-    return render(request, 'vawc/send-code.html')
-
-def newpass(request):
-    return render(request, 'vawc/new-pass.html')
-
-def doneSetPass(request):
-    return render(request, 'vawc/done-setpass.html')
 
 # Barangay side.
 def barangay(request):
     return render(request, 'vawc/barangay/barangay-dashboard.html')
 
+# report side.
 def barreport(request):
     return render(request, 'vawc/barangay/barangay-report.html')
 
@@ -88,14 +75,19 @@ def incidentInfo(request):
 def servicesInfo(request):
     return render(request, 'vawc/barangay/barangay-servicesInfo.html')
 
+def servicesAddCrisis(request):
+    return render(request, 'vawc/barangay/barangay-addCrisis.html')
+
+def servicesAddBPO(request):
+    return render(request, 'vawc/barangay/barangay-addBPO.html')
+
 def referred(request):
     return render(request, 'vawc/barangay/barangay-referred.html')
+# End of report.
 
-
-
+# user settings.
 def myProfile(request):
     return render(request, 'vawc/barangay/barangay-myprofile.html')
-
 
 
 def settings(request):
@@ -110,11 +102,3 @@ def bpo(request):
 
 def addBpo(request):
     return render(request, 'vawc/barangay/barangay-add-bpo.html')
-
-# Police side.
-def police(request):
-    return render(request, 'vawc/police/police-dashboard.html')
-
-# dswd side.
-def dswd(request):
-    return render(request, 'vawc/dswd/dswd-dashboard.html')
