@@ -376,7 +376,7 @@
 
     <div class="d-grid gap-2 d-md-flex justify-content-md-end pt-5">
         <a class="btn btn-outline-primary me-md-2" href="#" role="button">Print File</a>
-        <a class="btn btn-primary" href="#" role="button">Save</a>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Save</button>
       </div>
 
       <div class="pt-3 pb-3">
@@ -777,12 +777,48 @@
 
           <div class="d-grid gap-2 d-md-flex justify-content-md-end pt-5">
             <a class="btn btn-outline-primary me-md-2" href="#" role="button">Back</a>
-            <a class="btn btn-primary" href="#" role="button">Send</a>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#referralConfirm">Send</button>
           </div>
-   
-        
     </div><!--End of container 2-->
 </div><!--End of container 1-->
+
+<!-- Save -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="staticBackdropLabel">Barangay Protection Order</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            The Report form has been completed. You can edit it anytime if there are changes needed in the information provided.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Understood</button>
+        </div>
+      </div>
+    </div>
+  </div><!--end of modal-->
+
+  <!-- send -->
+<div class="modal fade" id="referralConfirm" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="referralConfirmLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="referralConfirmLabel">Referral Form Confirmation</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            Before you proceed to send the referral form, please take a moment to review all entered information carefully. Once submitted, it cannot be altered or undone.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">View</button>
+          <button type="button" class="btn btn-primary">Confirm</button>
+        </div>
+      </div>
+    </div>
+  </div><!--end of modal-->
 {% endblock %}
 {% endblock content %}
 
