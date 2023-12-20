@@ -47,6 +47,12 @@ urlpatterns = [
     
     path('barangay/add-bpo', views.servicesAddBPO, name="barangay services add bpo"),
     
+    path('barangay/impacted-victim', views.impactVic, name="barangay report impact victim"),
+    
+    path('barangay/impacted-behalf-impacted-victim', views.behalfImpactVic, name="barangay report behalf impact victim"),
+    
+    
+    
     path('barangay/referred', views.referred, name="barangay referred"),
     
     path('barangay/bpo', views.bpo, name="barangay bpo"),

@@ -85,6 +85,15 @@ def referred(request):
     return render(request, 'vawc/barangay/barangay-referred.html')
 # End of report.
 
+#  file a report.
+def impactVic(request):
+    return render(request, 'vawc/barangay/barangay-impactedVic.html')
+
+def behalfImpactVic(request):
+    return render(request, 'vawc/barangay/barangay-behalfImpactedVic.html')
+
+# end  file a report.
+
 # user settings.
 def myProfile(request):
     return render(request, 'vawc/barangay/barangay-myprofile.html')
