@@ -98,6 +98,9 @@ def behalfImpactVic(request):
 def allServices(request):
     return render(request, 'vawc/barangay/barangay-all-services.html')
 
+def servicesRescue(request):
+    return render(request, 'vawc/barangay/barangay-rescue.html')
+
 # end of services 
 
 # user settings.
