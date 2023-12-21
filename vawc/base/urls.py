@@ -51,6 +51,7 @@ urlpatterns = [
     
     path('barangay/impacted-behalf-impacted-victim', views.behalfImpactVic, name="barangay report behalf impact victim"),
     
+    path('barangay/all-services', views.allServices, name="barangay all services"),
     
     
     path('barangay/referred', views.referred, name="barangay referred"),

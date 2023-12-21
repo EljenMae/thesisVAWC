@@ -94,6 +94,12 @@ def behalfImpactVic(request):
 
 # end  file a report.
 
+# services
+def allServices(request):
+    return render(request, 'vawc/barangay/barangay-all-services.html')
+
+# end of services 
+
 # user settings.
 def myProfile(request):
     return render(request, 'vawc/barangay/barangay-myprofile.html')
