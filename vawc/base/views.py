@@ -106,6 +106,15 @@ def servicesBpo(request):
 
 # end of services 
 
+# records
+def victim(request):
+    return render(request, 'vawc/barangay/barangay-victim.html')
+
+def perpetrator(request):
+    return render(request, 'vawc/barangay/barangay-perpetrator.html')
+
+# end records
+
 # user settings.
 def myProfile(request):
     return render(request, 'vawc/barangay/barangay-myprofile.html')
