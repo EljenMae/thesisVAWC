@@ -101,6 +101,9 @@ def allServices(request):
 def servicesRescue(request):
     return render(request, 'vawc/barangay/barangay-rescue.html')
 
+def servicesBpo(request):
+    return render(request, 'vawc/barangay/barangay-bpo.html')
+
 # end of services 
 
 # user settings.
@@ -115,8 +118,7 @@ def settings(request):
 def reportAddBpo(request):
     return render(request, 'vawc/barangay/barangay-report-add-bpo.html')
 
-def bpo(request):
-    return render(request, 'vawc/barangay/barangay-bpo.html')
+
 
 def addBpo(request):
     return render(request, 'vawc/barangay/barangay-add-bpo.html')

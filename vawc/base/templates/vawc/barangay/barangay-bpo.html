@@ -6,23 +6,36 @@
 {% load static %}
 
 <div class="container pt-5">
-
-    <h1 class="pt-5">BARANGAY PROTECTION ORDER</h1>
-    <div class="d-grid justify-content-md-end">
-        <a class="btn btn-primary" href="{% url 'barangay add bpo' %}" role="button"> <i class="bi bi-plus"></i> Add BPO</a>
+    <div class="row justify-content-end">
+        <div class="col-lg-6 col-md-6 col-sm-8">
+            <h1 class="pt-5">BARANGAY PROTECTION ORDER</h1>
+        </div><!--end of col-->
+        <div class="col-lg-4 col-md-4 col-sm-8 pt-5">
+            <form class="d-flex justify-content-end" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-primary" type="submit">Search</button>
+            </form>
+        </div><!--end of col-->
+        <div class="col-lg-2 col-md-2 col-sm-8 pt-5">
+            <div class="dropdown d-flex justify-content-end">
+                <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Dropdown button
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end">
+                    <li><a class="dropdown-item" href="#">Ascending</a></li>
+                    <li><a class="dropdown-item" href="#">Descending</a></li>
+                    <li><a class="dropdown-item" href="#">Case No.</a></li>
+                </ul>
+            </div>
+        </div><!--end of col-->
+    </div><!--end of row-->
+      <div class="list-group pt-5">
+        <button type="button" class="list-group-item list-group-item-action" aria-current="true">The current button</button>
+        <button type="button" class="list-group-item list-group-item-action">A second button item</button>
+        <button type="button" class="list-group-item list-group-item-action">A third button item</button>
+        <button type="button" class="list-group-item list-group-item-action">A fourth button item</button>
       </div>
-
-      <div class="container pt-3">
-        <div class="list-group pt-5">
-            <button type="button" class="list-group-item list-group-item-action" aria-current="true">The current button</button>
-            <button type="button" class="list-group-item list-group-item-action">A second button item</button>
-            <button type="button" class="list-group-item list-group-item-action">A third button item</button>
-            <button type="button" class="list-group-item list-group-item-action">A fourth button item</button>
-          </div>
-      </div><!--End of container-->
-
-
-</div><!--end of container-->
+</div>
 
 {% endblock %}
 {% endblock content %}

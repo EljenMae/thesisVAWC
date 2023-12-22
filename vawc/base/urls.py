@@ -55,9 +55,11 @@ urlpatterns = [
     
     path('barangay/services-rescue', views.servicesRescue, name="barangay rescue"),
     
+    path('barangay/bpo', views.servicesBpo, name="barangay bpo"),
+    
     path('barangay/referred', views.referred, name="barangay referred"),
     
-    path('barangay/bpo', views.bpo, name="barangay bpo"),
+   
     
     path('barangay/add-bpo', views.addBpo, name="barangay add bpo"),
     
