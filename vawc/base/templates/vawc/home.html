@@ -4,37 +4,37 @@
 {% block content %}
 {% block static %}
 {% load static %}
-<div class="section pb-3">
-    <div id="carouselExampleIndicators" class="carousel slide ">
-        <div class="carousel-indicators ">
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-        <div class="carousel-item active h-50">
-            <img src= "{% static '/img/example1.jpg' %}" class="d-block w-100" alt="Example 1">
-        </div>
-        <div class="carousel-item">
-            <img src="{% static '/img/example2.jpg' %}" class="d-block w-100" alt="Example 2">
-        </div>
-        <div class="carousel-item">
-            <img src="{% static '/img/example3.jpg' %}" class="d-block w-100" alt="Example 3">
-        </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-        </button>
-    </div>
-</div> 
- <!--End of carou-->
 
-     <!--End Section for Herstory-->
+<!--Section for head-->
+<div class="container pt-5 pb-5">
+    <div class="row pt-5">
+        <!--Text-->
+        <div class="col-lg-6 col-md-6 col-sm-8">
+            <h5>Empower. Protect. Advocate.</h5>
+            <div class="text pt-2">
+                <h2>Join Us in Breaking the Cycle of Abuse. Together, We Can Make a Difference.</h2>
+            </div>
+            <div class="pt-2 pb-2">
+                <h5>Creating a Safe Haven for Women and Children</h5>
+            </div>
+            <div class="pt-2">
+                <p>We stand firm in our commitment to eradicate violence against women and children. Every individual deserves to live a life free from fear and abuse. Our mission is to empower survivors, protect the vulnerable, and advocate for a world where violence has no place.</p>
+            </div>
+            <div class="buttons">
+                <a class="btn btn-primary my-3" href="{% url 'impact victim' %}" role="button">I'm the Victim</a>
+                <a class="btn btn-outline-primary" href="{% url 'behalf contact person' %}" role="button">Behalf of Victim</a>
+            </div>
+        </div><!--end of col-->
+        <!--Image-->
+        <div class="col-lg-6 col-md-6 col-sm-8">
+            <img src= "{% static '/img/login.png' %}" class="img-fluid" alt="image">
+        </div><!--end of col-->
+    </div><!--end of row-->
+
+    
+    
+
+</div>
 
      <!--Section for Mission and vision-->
      <div class="container pt-4 pb-5">
