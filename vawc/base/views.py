@@ -112,8 +112,16 @@ def victim(request):
 
 def perpetrator(request):
     return render(request, 'vawc/barangay/barangay-perpetrator.html')
-
 # end records
+
+# cases
+def openCases(request):
+    return render(request, 'vawc/barangay/barangay-open-cases.html')
+
+def closeCases(request):
+    return render(request, 'vawc/barangay/barangay-close-cases.html')
+# end cases
+
 
 # user settings.
 def myProfile(request):
@@ -123,11 +131,4 @@ def myProfile(request):
 def settings(request):
     return render(request, 'vawc/barangay/barangay-settings.html')
 
-#  bpo.
-def reportAddBpo(request):
-    return render(request, 'vawc/barangay/barangay-report-add-bpo.html')
 
-
-
-def addBpo(request):
-    return render(request, 'vawc/barangay/barangay-add-bpo.html')
