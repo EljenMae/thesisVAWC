@@ -35,7 +35,9 @@ urlpatterns = [
     path('login/', views.login, name="login"),
 
     path('barangay/dashboard', views.barangay, name="barangay"),
+    
     path('barangay/report', views.barreport, name="barangay report"),
+    
     path('barangay/victimInform', views.victimInfo, name="barangay victim info"),
     path('barangay/perpetInform', views.perpetInfo, name="barangay perpetrator info"),
     

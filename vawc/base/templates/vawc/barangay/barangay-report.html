@@ -6,7 +6,7 @@
 {% load static %}
 
 <div class="container pt-5">
-    <h1 class="pt-5 pb-3">FILE A REPORT</h1>
+    <h1 class="pt-5">FILE A REPORT</h1>
     <div class="d-grid justify-content-md-end">
         <a class="btn btn-primary" href="{% url 'barangay victim info' %}" role="button"> <i class="bi bi-plus"></i> Add Report</a>
       </div><!--end of button-->
@@ -14,16 +14,13 @@
     <div class="pt-3">
       <ul class="nav nav-tabs pt-2">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Active</a>
+          <a class="nav-link active" aria-current="page" href="{% url 'barangay report' %}">All</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
+          <a class="nav-link" href="{% url 'barangay report impact victim' %}">Impacted Victim</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
+          <a class="nav-link" href="{% url 'barangay report behalf impact victim' %}">Behalf Impacted Victim</a>
         </li>
       </ul>
     </div>
