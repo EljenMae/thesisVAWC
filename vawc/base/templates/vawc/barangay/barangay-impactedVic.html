@@ -6,10 +6,14 @@
 {% load static %}
 
 <div class="container pt-5">
-    <h1 class="pt-5">IMPACTED VICTIM</h1>
-    <div class="d-grid justify-content-md-end">
-        <a class="btn btn-primary" href="{% url 'barangay victim info' %}" role="button"> <i class="bi bi-plus"></i> Add Report</a>
-      </div>
+  <div class="row justify-content-end">
+    <div class="col-lg-10 col-md-6 col-sm-8">
+        <h1 class="pt-5">IMPACTED VICTIM</h1>
+    </div><!--end of col-->
+    <div class="col-lg-2 col-md-2 col-sm-8 pt-5">
+        <a class="btn btn-primary" href="{% url 'barangay victim info' %}" role="button"><i class="bi bi-plus"></i> Add Report</a>
+    </div><!--end of col-->
+</div><!--end of row-->
       <!--tabs-->
       <div class="pt-3">
         <ul class="nav nav-tabs pt-2">
