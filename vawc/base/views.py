@@ -125,6 +125,12 @@ def closeCases(request):
 # report and feedback.
 def monthlyReport(request):
     return render(request, 'vawc/barangay/barangay-monthlyReport.html')
+
+def feedback(request):
+    return render(request, 'vawc/barangay/barangay-feedback.html')
+
+def feedbackForm(request):
+    return render(request, 'vawc/barangay/barangay-feedback-form.html')
 # end of report and feedback.
 
 # user settings.

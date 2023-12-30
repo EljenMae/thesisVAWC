@@ -70,6 +70,11 @@ urlpatterns = [
     path('barangay/close-cases', views.closeCases, name="barangay close cases"),
     
     path('barangay/monthly-report', views.monthlyReport, name="barangay monthly report"),
+    
+    path('barangay/monthly-feedback', views.feedback, name="barangay feedback"),
+    
+    path('barangay/monthly-feedback-form', views.feedbackForm, name="barangay feedback form"),
+   
    
 
 
