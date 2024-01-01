@@ -11,7 +11,7 @@
             <h1 class="pt-5">MONTHLY REPORT</h1>
         </div><!--end of col-->
         <div class="col-lg-2 col-md-2 col-sm-8 pt-5">
-            <a class="btn btn-primary" href="#" role="button">GENERATE REPORT</a>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">GENERATE REPORT</button>
         </div><!--end of col-->
     </div><!--end of row-->
 
@@ -129,6 +129,32 @@
  
 </div><!--end of container-->
 
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">Confirmation Report</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="form-floating">
+          <select class="form-select" id="floatingSelectGrid">
+            <option selected>Open this select menu</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+          <label for="floatingSelectGrid">Send it to:</label>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Back</button>
+        <button type="button" class="btn btn-primary">Send</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 {% endblock %}
