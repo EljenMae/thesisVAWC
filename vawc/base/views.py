@@ -120,6 +120,9 @@ def openCases(request):
 
 def closeCases(request):
     return render(request, 'vawc/barangay/barangay-close-cases.html')
+
+def closeCasesView(request):
+    return render(request, 'vawc/barangay/barangay-close-view.html')
 # end cases
 
 # report and feedback.
@@ -131,6 +134,9 @@ def feedback(request):
 
 def feedbackForm(request):
     return render(request, 'vawc/barangay/barangay-feedback-form.html')
+
+def feedbackFormView(request):
+    return render(request, 'vawc/barangay/barangay-feedback-form-view.html')
 # end of report and feedback.
 
 # user settings.

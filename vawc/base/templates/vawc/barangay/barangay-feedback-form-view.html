@@ -1,0 +1,117 @@
+{% extends "barangay-main.html" %}
+
+
+{% block content %}
+{% block static %}
+{% load static %}
+
+<div class="container pt-5">
+    <div class="pt-5">
+        <a class="text-decoration-none" href="{% url 'barangay feedback' %}" role="button"><i class='bx bx-arrow-back'></i> Back</a>
+    </div><!--end of back button-->
+    <div class="text-center">
+            <h1 class="pt-3">FEEDBACK FORM</h1>
+    </div><!--end of title-->
+    
+    <div class="row pt-3">
+        <div class="col-lg-6 col-md-6 col-sm-8">
+            <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput">Case No.</label>
+              </div>
+        </div><!--end of col-->
+        <div class="col-lg-6 col-md-6 col-sm-8">
+            <div class="form-floating mb-3">
+                <input type="date" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput">Date</label>
+              </div>
+        </div><!--end of col-->
+    </div><!--starting of row-->
+    <div class="row pt-2">
+        <div class="col-lg-4 col-md-4 col-sm-8">
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput">Name of Client</label>
+              </div>
+        </div><!--end of col-->
+        <div class="col-lg-4 col-md-4 col-sm-8">
+            <div class="form-floating mb-3">
+                <input type="number" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput">Age</label>
+              </div>
+        </div><!--end of col-->
+        <div class="col-lg-4 col-md-4 col-sm-8 pb-3">
+            <div class="form-floating">
+                <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                  <option value="female">Female</option>
+                  <option value="male">Male</option>
+                </select>
+                <label for="floatingSelect">Sex</label>
+              </div>
+        </div><!--End of col-->
+    </div><!--starting of row-->
+    <div class="row pt-2">
+        <div class="col-lg-4 col-md-4 col-sm-8">
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput">Address</label>
+              </div>
+        </div><!--end of col-->
+        <div class="col-lg-4 col-md-4 col-sm-8">
+            <div class="form-floating mb-3">
+                <input type="number" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput">Date Referred</label>
+              </div>
+        </div><!--end of col-->
+        <div class="col-lg-4 col-md-4 col-sm-8">
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput">Date Referred</label>
+              </div>
+        </div><!--end of col-->
+    </div><!--starting of row-->
+
+    <div class="pt-3">
+        <table class="table table-hover table-bordered">
+            <thead>
+              <tr class="text-center">
+                <th scope="col">Service/s Requested</th>
+                <th scope="col">Services/s Provided</th>
+                <th scope="col">Names of services provider/s and designation</th>
+                <th scope="col">Other pertinent information such as problem/s encountered</th>
+                <th scope="col">Client's satisfaction feedback (Only for case Managers)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td colspan="2">Larry the Bird</td>
+                <td>@twitter</td>
+              </tr>
+            </tbody>
+          </table>
+    </div><!--end of table-->
+
+    <div class="d-flex justify-content-end pt-3 pb-3">
+        <button class="btn btn-primary" type="save">Save</button>
+    </div>
+   
+ 
+</div><!--end of container-->
+
+
+
+{% endblock %}
+{% endblock content %}
