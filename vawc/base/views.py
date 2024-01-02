@@ -121,8 +121,8 @@ def openCases(request):
 def closeCases(request):
     return render(request, 'vawc/barangay/barangay-close-cases.html')
 
-def closeCasesView(request):
-    return render(request, 'vawc/barangay/barangay-close-view.html')
+def closeCasesViewStatus(request):
+    return render(request, 'vawc/barangay/barangay-close-view-status.html')
 # end cases
 
 # report and feedback.
