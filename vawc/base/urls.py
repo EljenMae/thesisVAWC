@@ -74,6 +74,8 @@ urlpatterns = [
     path('barangay/close-victim-view', views.closeVictimView, name="barangay close victim view"),
     
     path('barangay/close-perpetrator-view', views.closePerpetratorView, name="barangay close perpetrator view"),
+    
+    path('barangay/close-incident-view', views.closeIncidentView, name="barangay close incident view"),
    
     
     path('barangay/monthly-report', views.monthlyReport, name="barangay monthly report"),

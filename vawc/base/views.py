@@ -129,6 +129,9 @@ def closeVictimView(request):
 
 def closePerpetratorView(request):
     return render(request, 'vawc/barangay/barangay-close-perpetrator-view.html')
+
+def closeIncidentView(request):
+    return render(request, 'vawc/barangay/barangay-close-incident-view.html')
 # end cases
 # applicable for all
 
