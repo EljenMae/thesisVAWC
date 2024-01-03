@@ -1,0 +1,51 @@
+{% extends "barangay-main.html" %}
+
+
+{% block content %}
+{% block static %}
+{% load static %}
+
+<div class="container pt-5">
+  <div class="pt-5">
+    <a class="text-decoration-none" href="{% url 'barangay close cases' %}" role="button"><i class='bx bx-arrow-back'></i> Back</a>
+</div>
+  
+     <!--tabs-->
+     <div class="pt-3">
+      <ul class="nav nav-tabs pt-2">
+        <li class="nav-item">
+          <a class="nav-link "  href="{% url 'barangay close cases view status' %}">Status</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="{% url 'barangay close cases' %}">Victim</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="{% url 'barangay close perpetrator view' %}">Perpetrator</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="#">Incident</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="#">Services</a>
+        </li>
+      </ul>
+    </div>
+      <!--end of tabs-->
+
+      <div class="row justify-content-end">
+        <div class="col-lg-12 col-md-12 col-sm-8">
+            <h1 class="pt-5">VICTIM</h1>
+        </div><!--end of col-->
+      </div><!--end of row-->
+        
+      <div class="pt-2">
+        <div class="card">
+          <div class="card-body">
+            This is some text within a card body.
+          </div>
+        </div>
+      </div>
+ 
+</div><!--end of container-->
+{% endblock %}
+{% endblock content %}

@@ -123,7 +123,18 @@ def closeCases(request):
 
 def closeCasesViewStatus(request):
     return render(request, 'vawc/barangay/barangay-close-view-status.html')
+
+def closeVictimView(request):
+    return render(request, 'vawc/barangay/barangay-close-victim-view.html')
+
+def closePerpetratorView(request):
+    return render(request, 'vawc/barangay/barangay-close-perpetrator-view.html')
 # end cases
+# applicable for all
+
+
+
+# end applicable for all
 
 # report and feedback.
 def monthlyReport(request):

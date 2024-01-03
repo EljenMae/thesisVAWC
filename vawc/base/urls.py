@@ -70,6 +70,11 @@ urlpatterns = [
     path('barangay/close-cases', views.closeCases, name="barangay close cases"),
     
     path('barangay/close-cases-view', views.closeCasesViewStatus, name="barangay close cases view status"),
+       
+    path('barangay/close-victim-view', views.closeVictimView, name="barangay close victim view"),
+    
+    path('barangay/close-perpetrator-view', views.closePerpetratorView, name="barangay close perpetrator view"),
+   
     
     path('barangay/monthly-report', views.monthlyReport, name="barangay monthly report"),
     
@@ -78,8 +83,7 @@ urlpatterns = [
     path('barangay/monthly-feedback-form', views.feedbackForm, name="barangay feedback form"),
     
     path('barangay/monthly-feedback-form-view', views.feedbackFormView, name="barangay feedback form view"),
-   
-   
+
 
 
 
