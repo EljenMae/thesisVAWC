@@ -132,6 +132,9 @@ def closePerpetratorView(request):
 
 def closeIncidentView(request):
     return render(request, 'vawc/barangay/barangay-close-incident-view.html')
+
+def closeServicesView(request):
+    return render(request, 'vawc/barangay/barangay-close-services-view.html')
 # end cases
 # applicable for all
 

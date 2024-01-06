@@ -1,0 +1,54 @@
+{% extends "barangay-main.html" %}
+
+
+{% block content %}
+{% block static %}
+{% load static %}
+
+<div class="container pt-5">
+  <div class="pt-5">
+    <a class="text-decoration-none" href="{% url 'barangay close cases' %}" role="button"><i class='bx bx-arrow-back'></i> Back</a>
+</div>
+  
+     <!--tabs-->
+     <div class="pt-3">
+        <ul class="nav nav-tabs pt-2">
+          <li class="nav-item">
+            <a class="nav-link "  href="{% url 'barangay close cases view status' %}">Status</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="{% url 'barangay close victim view' %}">Victim</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="{% url 'barangay close perpetrator view' %}">Perpetrator</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link "  href="{% url 'barangay close incident view' %}">Incident</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="{% url 'barangay close services view' %}">Services</a>
+          </li>
+        </ul>
+      </div>
+        <!--end of tabs-->
+  
+
+        <div class="container pt-5">
+          <h1 class="pt-3 text-center">Services Information</h1>
+  
+          <div class="row pt-5">
+              <div class="col-lg-6 col-md-6 col-sm-8">
+                  <a class="btn btn-primary w-100 btn-lg" href="{% url 'barangay services add crisis' %}" role="button">Crisis Invention Including Rescue</a>
+              </div><!--end of col-->
+              <div class="col-lg-6 col-md-6 col-sm-8">
+                  <a class="btn btn-primary w-100 btn-lg" href="{% url 'barangay services add bpo' %}" role="button">Issuance / Enforcement of Barangay Protection Order </a>
+              </div><!--end of col-->
+          </div><!--End of row-->
+      </div><!--End of container 2-->
+     
+ 
+</div><!--end of container-->
+
+
+{% endblock %}
+{% endblock content %}
