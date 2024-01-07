@@ -78,6 +78,8 @@ urlpatterns = [
     path('barangay/close-incident-view', views.closeIncidentView, name="barangay close incident view"),
     
     path('barangay/close-services-view', views.closeServicesView, name="barangay close services view"),
+    
+    path('barangay/close-add-ref', views.closeAddRef, name="barangay close add ref"),
    
     
     path('barangay/monthly-report', views.monthlyReport, name="barangay monthly report"),
