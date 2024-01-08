@@ -138,6 +138,9 @@ def closeServicesView(request):
 
 def closeAddRef(request):
     return render(request, 'vawc/barangay/barangay-close-add-ref.html')
+
+def closeRefView(request):
+    return render(request, 'vawc/barangay/barangay-close-referral-view.html')
 # end cases
 # applicable for all
 
