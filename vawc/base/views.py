@@ -133,6 +133,12 @@ def openViewIncident(request):
 def openViewServices(request):
     return render(request, 'vawc/barangay/barangay-open-services-view.html')
 
+def openAddRef(request):
+    return render(request, 'vawc/barangay/barangay-open-add-ref.html')
+
+def openRefView(request):
+    return render(request, 'vawc/barangay/barangay-open-ref-view.html')
+
 def closeCases(request):
     return render(request, 'vawc/barangay/barangay-close-cases.html')
 

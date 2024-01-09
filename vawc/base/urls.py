@@ -77,6 +77,9 @@ urlpatterns = [
     
     path('barangay/open-services-view', views.openViewServices, name="barangay open services view"),
     
+    path('barangay/open-addReferral', views.openAddRef, name="barangay open add ref"),
+    
+    path('barangay/open-referral-view', views.openRefView, name="barangay open ref view"),
 
     path('barangay/close-cases', views.closeCases, name="barangay close cases"),
     
