@@ -65,6 +65,12 @@ urlpatterns = [
    
     path('barangay/perpetrator', views.perpetrator, name="barangay perpetrator"),
     
+    path('barangay/perpetrator-status', views.perpetratorStatus, name="barangay perpetrator status"),
+    
+    path('barangay/perpetrator-victim', views.perpetratorVictim, name="barangay perpetrator victim"),
+    
+    path('barangay/perpetrator-perpetrator', views.perpetratorPerpetrator, name="barangay perpetrator perpetrator"),
+    
     path('barangay/open-cases', views.openCases, name="barangay open cases"),
     
     path('barangay/open-status-view', views.openViewStatus, name="barangay open view status"),

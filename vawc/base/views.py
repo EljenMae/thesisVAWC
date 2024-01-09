@@ -112,6 +112,15 @@ def victim(request):
 
 def perpetrator(request):
     return render(request, 'vawc/barangay/barangay-perpetrator.html')
+
+def perpetratorStatus(request):
+    return render(request, 'vawc/barangay/barangay-perpetrator-status.html')
+
+def perpetratorVictim(request):
+    return render(request, 'vawc/barangay/barangay-perpetrator-victim.html')
+
+def perpetratorPerpetrator(request):
+    return render(request, 'vawc/barangay/barangay-perpetrator-perpetrator.html')
 # end records
 
 # cases
