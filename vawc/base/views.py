@@ -118,6 +118,21 @@ def perpetrator(request):
 def openCases(request):
     return render(request, 'vawc/barangay/barangay-open-cases.html')
 
+def openViewStatus(request):
+    return render(request, 'vawc/barangay/barangay-open-view-status.html')
+
+def openViewVictim(request):
+    return render(request, 'vawc/barangay/barangay-open-victim-view.html')
+
+def openViewPerpetrator(request):
+    return render(request, 'vawc/barangay/barangay-open-perpetrator-view.html')
+
+def openViewIncident(request):
+    return render(request, 'vawc/barangay/barangay-open-incident-view.html')
+
+def openViewServices(request):
+    return render(request, 'vawc/barangay/barangay-open-services-view.html')
+
 def closeCases(request):
     return render(request, 'vawc/barangay/barangay-close-cases.html')
 

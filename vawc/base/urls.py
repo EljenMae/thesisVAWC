@@ -67,6 +67,17 @@ urlpatterns = [
     
     path('barangay/open-cases', views.openCases, name="barangay open cases"),
     
+    path('barangay/open-status-view', views.openViewStatus, name="barangay open view status"),
+    
+    path('barangay/open-victim-view', views.openViewVictim, name="barangay open victim view"),
+    
+    path('barangay/open-perpetrator-view', views.openViewPerpetrator, name="barangay open perpetrator view"),
+    
+    path('barangay/open-incident-view', views.openViewIncident, name="barangay open incident view"),
+    
+    path('barangay/open-services-view', views.openViewServices, name="barangay open services view"),
+    
+
     path('barangay/close-cases', views.closeCases, name="barangay close cases"),
     
     path('barangay/close-cases-view', views.closeCasesViewStatus, name="barangay close cases view status"),
