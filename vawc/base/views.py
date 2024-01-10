@@ -110,6 +110,27 @@ def servicesBpo(request):
 def victim(request):
     return render(request, 'vawc/barangay/barangay-victim.html')
 
+def victimStatus(request):
+    return render(request, 'vawc/barangay/barangay-victim-status.html')
+
+def victimVictim(request):
+    return render(request, 'vawc/barangay/barangay-victim-victim.html')
+
+def victimPerpetrator(request):
+    return render(request, 'vawc/barangay/barangay-victim-perpetrator.html')
+
+def victimIncident(request):
+    return render(request, 'vawc/barangay/barangay-victim-incident.html')
+
+def victimServices(request):
+    return render(request, 'vawc/barangay/barangay-victim-services.html')
+
+def victimAddRef(request):
+    return render(request, 'vawc/barangay/barangay-victim-add-ref.html')
+
+def victimRefView(request):
+    return render(request, 'vawc/barangay/barangay-victim-ref-view.html')
+
 def perpetrator(request):
     return render(request, 'vawc/barangay/barangay-perpetrator.html')
 
