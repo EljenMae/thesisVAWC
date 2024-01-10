@@ -1,0 +1,219 @@
+{% extends "barangay-main.html" %}
+
+
+{% block content %}
+{% block static %}
+{% load static %}
+
+<div class="container pt-5">
+  <div class="pt-5">
+    <a class="text-decoration-none" href="{% url 'barangay perpetrator services' %}" role="button"><i class='bx bx-arrow-back'></i> Back</a>
+
+    <div class="container pt-5">
+        <h1 class="pt-3 text-center">Referral Form</h1>
+
+        <div class="row pt-3">
+            <div class="col-lg-6 col-md-6 col-sm-8 pt-3">
+                <div class="form-floating">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="Zamboanga Del Sur">
+                    <label for="floatingInput">Case No:</label>
+                </div>
+            </div><!--End of column-->
+            <div class="col-lg-6 col-md-6 col-sm-8 pt-3">
+                <div class="form-floating">
+                    <input type="date" class="form-control" id="floatingInput" placeholder="Zamboanga Del Sur">
+                    <label for="floatingInput">Date of Referral:</label>
+                </div>
+            </div><!--End of column-->
+        </div><!--End of row-->
+
+        <div class="row pt-1">
+            <div class="col-lg-12 col-md-12 col-sm-8 pt-3">
+                <div class="form-floating">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="Zamboanga Del Sur">
+                    <label for="floatingInput">To: </label>
+                </div>
+            </div><!--End of column-->
+        </div><!--End of row-->
+        <div class="row pt-1">
+            <div class="col-lg-12 col-md-12 col-sm-8 pt-3">
+                <div class="form-floating">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="Zamboanga Del Sur">
+                    <label for="floatingInput">Address:</label>
+                </div>
+            </div><!--End of column-->
+        </div><!--End of row-->
+
+        <div class="row pt-1">
+            <div class="col-lg-12 col-md-12 col-sm-8 pt-3">
+                <div class="form-floating">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="Zamboanga Del Sur">
+                    <label for="floatingInput">Contact Person: </label>
+                </div>
+            </div><!--End of column-->
+        </div><!--End of row-->
+        <div class="row pt-1">
+            <div class="col-lg-12 col-md-12 col-sm-8 pt-3">
+                <div class="form-floating">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="Zamboanga Del Sur">
+                    <label for="floatingInput">Name of Client:</label>
+                </div>
+            </div><!--End of column-->
+        </div><!--End of row-->
+
+        <div class="row pt-1">
+            <div class="col-lg-4 col-md-4 col-sm-8 pt-3">
+                <div class="form-floating">
+                    <input type="number" class="form-control" id="floatingInput" placeholder="Zamboanga Del Sur">
+                    <label for="floatingInput">Age: </label>
+                </div>
+            </div><!--End of column-->
+            <div class="col-lg-4 col-md-4 col-sm-8 pt-3">
+                <div class="form-floating">
+                    <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                      <option value="female">Female</option>
+                      <option value="male">Male</option>
+                    </select>
+                    <label for="floatingSelect">Sex</label>
+                  </div>
+            </div><!--End of column-->
+            <div class="col-lg-4 col-md-4 col-sm-8 pt-3">
+                <div class="form-floating">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="Zamboanga Del Sur">
+                    <label for="floatingInput">Address:</label>
+                </div>
+            </div><!--End of column-->
+        </div><!--End of row-->
+
+        <div class="row pt-1">
+            <div class="col-lg-6 col-md-6 col-sm-8 pt-3">
+                <div class="form-floating">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="Zamboanga Del Sur">
+                    <label for="floatingInput">Name of family / Guardian: </label>
+                </div>
+            </div><!--End of column-->
+            <div class="col-lg-6 col-md-6 col-sm-8 pt-3">
+                <div class="form-floating">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="Zamboanga Del Sur">
+                    <label for="floatingInput">Contact No.:</label>
+                </div>
+            </div><!--End of column-->
+        </div><!--End of row-->
+
+        <div class="row pt-1">
+            <div class="col-lg-12 col-md-12 col-sm-8 pt-3">
+                <div class="form-floating">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="Zamboanga Del Sur">
+                    <label for="floatingInput">Address: </label>
+                </div>
+            </div><!--End of column-->
+        </div> <!--End of row-->
+
+        <div class="row pt-1">
+            <div class="col-lg-12 col-md-12 col-sm-8 pt-3">
+                <div class="form-floating">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="Zamboanga Del Sur">
+                    <label for="floatingInput">Reason/s for Referral: </label>
+                </div>
+            </div><!--End of column-->
+        </div> <!--End of row-->
+
+        <div class="row pt-1">
+            <div class="col-lg-12 col-md-12 col-sm-8 pt-3">
+                <div class="form-floating">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="Zamboanga Del Sur">
+                    <label for="floatingInput">Specific Service / Requested: </label>
+                </div>
+                <p>Please refer to attached report / intake form / case summary for more information.</p>
+            </div><!--End of column-->
+        </div> <!--End of row-->
+
+        <div class="pt-3">
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Feedback requested and sent to Referring Party / Agency:</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+        </div>
+
+        <div class="row pt-1">
+            <div class="col-lg-12 col-md-12 col-sm-8">
+                <div class="form-floating">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="Zamboanga Del Sur">
+                    <label for="floatingInput">Address:</label>
+                </div>
+            </div><!--End of column-->
+        </div><!--End of row-->
+
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-8 pt-3">
+                <div class="form-floating">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="Zamboanga Del Sur">
+                    <label for="floatingInput">Cellphone No.: </label>
+                </div>
+            </div><!--End of column-->
+            <div class="col-lg-6 col-md-6 col-sm-8 pt-3">
+                <div class="form-floating">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="Zamboanga Del Sur">
+                    <label for="floatingInput">Landline No.:</label>
+                </div>
+            </div><!--End of column-->
+        </div><!--End of row-->
+
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-8 pt-3">
+                <div class="form-floating">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="Zamboanga Del Sur">
+                    <label for="floatingInput">Email Address: </label>
+                </div>
+            </div><!--End of column-->
+            <div class="col-lg-6 col-md-6 col-sm-8 pt-3">
+                <div class="form-floating">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="Zamboanga Del Sur">
+                    <label for="floatingInput">Fax No.:</label>
+                </div>
+            </div><!--End of column-->
+        </div><!--End of row-->
+
+        <div class="row pt-2">
+            <div class="col-lg-12 col-md-12 col-sm-8">
+                <div class="form-floating">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="Zamboanga Del Sur">
+                    <label for="floatingInput">Contact Person:</label>
+                </div>
+            </div><!--End of column-->
+        </div><!--End of row-->
+
+        <div class="row pt-4">
+            <h4>Referred by:</h4>
+            <div class="col-lg-6 col-md-6 col-sm-8">
+                <div class="mb-3 text-center">
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  <label for="exampleFormControlTextarea1" class="form-label">Signature over Printed Name</label>
+                </div>
+            </div><!--End of col-->
+            <div class="col-lg-6 col-md-6 col-sm-8">
+                <div class="mb-3 text-center">
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  <label for="exampleFormControlTextarea1" class="form-label">Designation </label>
+                </div>
+            </div><!--End of col-->
+        </div><!--End of row-->
+
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end pt-3 pb-5">
+            <a class="btn btn-outline-primary" href="#" role="button">FILE DOWNLOAD</a>
+        </div><!--end of buttons-->
+
+    </div><!--End of container 1-->
+</div>
+  
+     
+        
+
+
+     
+ 
+</div><!--end of container-->
+
+
+{% endblock %}
+{% endblock content %}

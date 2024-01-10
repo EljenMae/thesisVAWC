@@ -1,0 +1,366 @@
+{% extends "barangay-main.html" %}
+
+
+{% block content %}
+{% block static %}
+{% load static %}
+
+<div class="container pt-5">
+     <div class="pt-5">
+        <a class="text-decoration-none" href="{% url 'barangay perpetrator' %}" role="button"><i class='bx bx-arrow-back'></i> Back</a>
+    </div>
+      
+         <!--tabs-->
+         <div class="pt-3">
+          <ul class="nav nav-tabs pt-2">
+            <li class="nav-item">
+              <a class="nav-link "  href="{% url 'barangay perpetrator status' %}">Status</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="{% url 'barangay perpetrator victim' %}">Victim</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="{% url 'barangay perpetrator perpetrator' %}">Perpetrator</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="{% url 'barangay perpetrator incident' %}">Incident</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="{% url 'barangay perpetrator services' %}">Services</a>
+            </li>
+          </ul>
+        </div>
+          <!--end of tabs-->
+  
+
+      <div class="container pt-3">
+        <h1 class="pt-3 text-center">VICTIM SURVIVOR INFORMATION</h1>
+            <p class="pt-3">Barangay Case No:</p>
+            <h4>Name:</h4></h1>
+
+            <div class="row pt-3">
+              <div class="col-lg-3 col-md-3 col-sm-8">
+                  <div class="form-floating mb-3">
+                      <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                      <label for="floatingInput">First Name</label>
+                    </div>
+              </div><!--End of col-->
+              <div class="col-lg-3 col-md-3 col-sm-8">
+                  <div class="form-floating mb-3">
+                      <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                      <label for="floatingInput">Middle Name</label>
+                    </div>
+              </div><!--End of col-->
+              <div class="col-lg-3 col-md-3 col-sm-8">
+                  <div class="form-floating mb-3">
+                      <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                      <label for="floatingInput">Last Name</label>
+                    </div>
+              </div><!--End of col-->
+              <div class="col-lg-3 col-md-3 col-sm-8">
+                  <div class="form-floating">
+                      <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                        <option value="not-available">N/A</option>
+                        <option value="sr">Sr</option>
+                        <option value="jr">Jr</option>
+                        <option value="ii">II</option>
+                        <option value="iii">III</option>
+                        <option value="iv">IV</option>
+                      </select>
+                      <label for="floatingSelect">Suffix</label>
+                    </div>
+              </div><!--End of col-->
+          </div><!--End of row-->
+
+          <div class="row pt-3">
+            <div class="col-lg-3 col-md-3 col-sm-8 pb-2">
+                <input class="form-check-input" type="checkbox" value="" id="invalidCheck">
+                <label class="form-check-label" for="invalidCheck"><strong>With Disability</strong></label>
+            </div><!--End of col-->
+            <div class="col-lg-3 col-md-3 col-sm-8 pb-2">
+                <input class="form-check-input" type="checkbox" value="" id="invalidCheck">
+                <label class="form-check-label" for="invalidCheck">Permanent Disability</label>
+            </div><!--End of col-->
+            <div class="col-lg-3 col-md-3 col-sm-8 pb-3">
+                <input class="form-check-input" type="checkbox" value="" id="invalidCheck">
+                <label class="form-check-label" for="invalidCheck">Temporary Disability</label>
+            </div><!--End of col-->
+    </div><!--End of row-->
+
+    <div class="row pb-3">
+      <div class="col-lg-3 col-md-3 col-sm-8 pb-2">
+          <input class="form-check-input" type="checkbox" value="" id="invalidCheck">
+          <label class="form-check-label" for="invalidCheck"><strong>Without Disability</strong></label>
+      </div><!--End of col-->
+  </div><!--End of row-->
+
+  <div class="row">
+      <div class="col-lg-3 col-md-3 col-sm-8 pb-3">
+          <div class="form-floating">
+              <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                <option value="female">Female</option>
+                <option value="male">Male</option>
+              </select>
+              <label for="floatingSelect">Sex</label>
+            </div>
+      </div><!--End of col-->
+      <div class="col-lg-3 col-md-3 col-sm-8">
+          <div class="form-floating mb-3">
+              <input type="date" class="form-control" id="floatingInput" placeholder="dd/mm/yyyy">
+              <label for="floatingInput">Date of Birth</label>
+            </div>
+      </div><!--End of col-->
+      <div class="col-lg-3 col-md-3 col-sm-8">
+          <div class="form-floating mb-3">
+              <input type="number" class="form-control" id="floatingInput" placeholder="name@example.com">
+              <label for="floatingInput">Age</label>
+            </div>
+      </div><!--End of col-->
+      <div class="col-lg-3 col-md-3 col-sm-8 pb-3">
+          <div class="form-floating">
+              <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                <option value="single">Single</option>
+                <option value="married">Married</option>
+                <option value="live-in">Live-In</option>
+                <option value="widowed">Widowed</option>
+                <option value="separated">Separated</option>
+              </select>
+              <label for="floatingSelect">Civil Status</label>
+            </div>
+      </div><!--End of col-->
+  </div><!--End of row-->
+
+  <div class="row">
+    <div class="col-lg-3 col-md-3 col-sm-8 pb-3">
+        <div class="form-floating">
+            <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+              <option value="elementary">Elementary Level</option>
+              <option value="highschool">High School Level</option>
+              <option value="vocationsl">Vocational</option>
+              <option value="collegeLevel">College Level</option>
+              <option value="post-grad">Post Graduated</option>
+              <option value="no-response">No Response</option>
+              <option value="educt-others">Others</option>
+            </select>
+            <label for="floatingSelect">Highest Educational Attainment</label>
+          </div>
+    </div><!--End of column-->
+    <div class="col-lg-3 col-md-3 col-sm-8">
+        <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+            <label for="floatingInput">Nationality</label>
+          </div>
+    </div><!--End of col-->
+    <div class="col-lg-3 col-md-3 col-sm-8">
+        <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+            <label for="floatingInput">Passport No (If non-filipino)</label>
+          </div>
+    </div><!--End of col-->
+    <div class="col-lg-3 col-md-3 col-sm-8">
+        <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+            <label for="floatingInput">Occupation</label>
+          </div>
+    </div><!--End of col-->
+    </div><!--End of row-->
+
+    <div class="row pb-3">
+      <div class="col-lg-4 col-md-4 col-sm-8 pb-3">
+          <div class="form-floating">
+              <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                <option value="roman-catholic">Roman Catholic</option>
+                <option value="islam">Islam</option>
+                <option value="protestant">Protestant</option>
+                <option value="iglesia-ni-kristo">Iglesia ni Kristo</option>
+                <option value="aglipayan">Aglipayan</option>
+                <option value="other-religion">Others</option>
+              </select>
+              <label for="floatingSelect">Religion</label>
+            </div>
+      </div><!--End of col-->
+      <div class="col-lg-4 col-md-4 col-sm-8">
+          <div class="form-floating mb-3">
+              <input type="text" class="form-control" id="floatingInput" placeholder="Purok IV">
+              <label for="floatingInput">Street</label>
+            </div>
+      </div><!--End of col-->
+
+      <div class="col-lg-4 col-md-4 col-sm-8">
+          <div class="form-floating mb-3">
+              <input type="text" class="form-control" id="floatingInput" placeholder="Zamboanga Del Sur">
+              <label for="floatingInput">Barangay</label>
+            </div>
+      </div><!--End of col-->
+  </div><!--End of row-->
+
+  <div class="row">
+    <div class="col-lg-4 col-md-4 col-sm-8">
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="floatingInput" placeholder="Zamboanga Del Sur">
+            <label for="floatingInput">Province</label>
+          </div>
+    </div><!--End of col-->
+    <div class="col-lg-4 col-md-4 col-sm-8">
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="floatingInput" placeholder="Zamboanga City">
+            <label for="floatingInput">City / Mun</label>
+          </div>
+    </div><!--End of col-->
+  
+    <div class="col-lg-4 col-md-4 col-sm-8 pb-3">
+        <div class="form-floating">
+            <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                <option value="region-I">Region I – Ilocos Region</option>
+                <option value="region-II">Region II – Cagayan Valley</option>
+                <option value="region-III">Region III – Central Luzon</option>
+                <option value="region-IV">Region IV‑A – CALABARZON</option>
+                <option value="mimaropa">MIMAROPA Region</option>
+                <option value="region-V">Region V – Bicol Region</option>
+                <option value="region-VI">Region VI – Western Visayas</option>
+                <option value="region-VII">Region VII – Central Visayas</option>
+                <option value="region-VIII">Region VIII – Eastern Visayas</option>
+                <option value="region-IX">Region IX – Zamboanga Peninsula</option>
+                <option value="region-X">Region X – Northern Mindanao</option>
+                <option value="region-XI">Region XI – Davao Region</option>
+                <option value="region-XII">Region XII – SOCCSKSARGEN</option>
+                <option value="region-XIII">Region XIII – Caraga</option>
+                <option value="ncr">NCR – National Capital Region</option>
+                <option value="car">CAR – Cordillera Administrative Region</option>
+                <option value="barmm">BARMM – Bangsamoro Autonomous Region in Muslim Mindanao</option>
+            </select>
+            <label for="floatingSelect">Region</label>
+          </div>
+    </div><!--End of col-->
+</div><!--End of row-->
+
+<div class="row">
+  <div class="col-lg-6 col-md-6 col-sm-8">
+      <div class="form-floating mb-3">
+          <input type="number" class="form-control" id="floatingInput" placeholder="Zamboanga Del Sur">
+          <label for="floatingInput">Number of Children (if any)</label>
+        </div>
+  </div><!--End of col-->
+
+  <div class="col-lg-6 col-md-6 col-sm-8">
+      <div class="form-floating mb-3">
+          <input type="number" class="form-control" id="floatingInput" placeholder="Zamboanga Del Sur">
+          <label for="floatingInput">Age of Children</label>
+        </div>
+  </div><!--End of col-->
+</div><!--end of row-->
+<div class="pt-3 pb-3">
+<a class="btn btn-primary w-100" href="#" role="button"><i class="bi bi-plus-lg"></i></a>
+</div>
+
+<hr>
+
+<div class="row pt-3">
+  <h4 class="pb-3">Name of Parent / Guardian</h4>
+  <div class="col-lg-3 col-md-3 col-sm-8">
+      <div class="form-floating mb-3">
+          <input type="text" class="form-control" id="floatingInput" placeholder="Zamboanga Del Sur">
+          <label for="floatingInput">First Name</label>
+        </div>
+  </div><!--End of col-->
+  <div class="col-lg-3 col-md-3 col-sm-8">
+      <div class="form-floating mb-3">
+          <input type="text" class="form-control" id="floatingInput" placeholder="Zamboanga Del Sur">
+          <label for="floatingInput">Middle Name</label>
+        </div>
+  </div><!--End of col-->
+  <div class="col-lg-3 col-md-3 col-sm-8">
+      <div class="form-floating mb-3">
+          <input type="text" class="form-control" id="floatingInput" placeholder="Zamboanga Del Sur">
+          <label for="floatingInput">Last Name</label>
+        </div>
+  </div><!--End of col-->
+  <div class="col-lg-3 col-md-3 col-sm-8">
+      <div class="form-floating">
+          <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+            <option value="not-available">N/A</option>
+            <option value="sr">Sr</option>
+            <option value="jr">Jr</option>
+            <option value="ii">II</option>
+            <option value="iii">III</option>
+            <option value="iv">IV</option>
+          </select>
+          <label for="floatingSelect">Suffix</label>
+        </div>
+  </div><!--End of col-->
+</div><!--End of row-->
+
+<div class="row">
+  <div class="col-lg-4 col-md-4 col-sm-8">
+      <div class="form-floating mb-3">
+          <input type="text" class="form-control" id="floatingInput" placeholder="Aunt">
+          <label for="floatingInput">Relationship of Guardian to Victim-Survivor</label>
+        </div>
+  </div><!--End of col-->
+
+  <div class="col-lg-4 col-md-4 col-sm-8">
+      <div class="form-floating mb-3">
+          <input type="text" class="form-control" id="floatingInput" placeholder="Purok IV">
+          <label for="floatingInput">Contact No. of Parent/ Guardian</label>
+        </div>
+  </div><!--End of col-->
+  <div class="col-lg-4 col-md-4 col-sm-8">
+      <div class="form-floating mb-3">
+          <input type="text" class="form-control" id="floatingInput" placeholder="Purok IV">
+          <label for="floatingInput">Street:</label>
+        </div>
+  </div><!--End of col-->
+</div><!--End of row-->
+  <div class="row">
+      <div class="col-lg-3 col-md-3 col-sm-8">
+          <div class="form-floating mb-3">
+              <input type="text" class="form-control" id="floatingInput" placeholder="Purok IV">
+              <label for="floatingInput">Barangay</label>
+            </div>
+      </div><!--End of col-->
+      <div class="col-lg-3 col-md-3 col-sm-8">
+          <div class="form-floating mb-3">
+              <input type="text" class="form-control" id="floatingInput" placeholder="Purok IV">
+              <label for="floatingInput">Province</label>
+            </div>
+      </div><!--End of col-->
+      <div class="col-lg-3 col-md-3 col-sm-8">
+          <div class="form-floating mb-3">
+              <input type="text" class="form-control" id="floatingInput" placeholder="Purok IV">
+              <label for="floatingInput">City</label>
+            </div>
+      </div><!--End of col-->
+      <div class="col-lg-3 col-md-3 col-sm-8 pb-3">
+          <div class="form-floating">
+              <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                  <option value="region-I">Region I – Ilocos Region</option>
+                  <option value="region-II">Region II – Cagayan Valley</option>
+                  <option value="region-III">Region III – Central Luzon</option>
+                  <option value="region-IV">Region IV‑A – CALABARZON</option>
+                  <option value="mimaropa">MIMAROPA Region</option>
+                  <option value="region-V">Region V – Bicol Region</option>
+                  <option value="region-VI">Region VI – Western Visayas</option>
+                  <option value="region-VII">Region VII – Central Visayas</option>
+                  <option value="region-VIII">Region VIII – Eastern Visayas</option>
+                  <option value="region-IX">Region IX – Zamboanga Peninsula</option>
+                  <option value="region-X">Region X – Northern Mindanao</option>
+                  <option value="region-XI">Region XI – Davao Region</option>
+                  <option value="region-XII">Region XII – SOCCSKSARGEN</option>
+                  <option value="region-XIII">Region XIII – Caraga</option>
+                  <option value="ncr">NCR – National Capital Region</option>
+                  <option value="car">CAR – Cordillera Administrative Region</option>
+                  <option value="barmm">BARMM – Bangsamoro Autonomous Region in Muslim Mindanao</option>
+              </select>
+              <label for="floatingSelect">Region</label>
+            </div>
+      </div><!--End of col-->
+
+      <div class="d-grid gap-2 d-md-flex justify-content-md-end pt-3 pb-3">
+        <button class="btn btn-primary" type="button">Save</button>
+      </div>
+     
+  </div><!--end of row-->
+    
+</div><!--end of container-->
+{% endblock %}
+{% endblock content %}
