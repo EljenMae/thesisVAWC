@@ -101,6 +101,29 @@ def allServices(request):
 def servicesRescue(request):
     return render(request, 'vawc/barangay/barangay-rescue.html')
 
+def servicesRescueStatus(request):
+    return render(request, 'vawc/barangay/barangay-rescue-status.html')
+
+def servicesRescueVictim(request):
+    return render(request, 'vawc/barangay/barangay-rescue-victim.html')
+
+def servicesRescuePerpetrator(request):
+    return render(request, 'vawc/barangay/barangay-rescue-perpetrator.html')
+
+def servicesRescueIncident(request):
+    return render(request, 'vawc/barangay/barangay-rescue-incident.html')
+
+def servicesRescueServices(request):
+    return render(request, 'vawc/barangay/barangay-rescue-services.html')
+
+def servicesRescueAddRef(request):
+    return render(request, 'vawc/barangay/barangay-rescue-add-ref.html')
+
+def servicesRescueRefView(request):
+    return render(request, 'vawc/barangay/barangay-rescue-ref-view.html')
+
+
+
 def servicesBpo(request):
     return render(request, 'vawc/barangay/barangay-bpo.html')
 

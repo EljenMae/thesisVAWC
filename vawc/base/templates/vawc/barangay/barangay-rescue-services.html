@@ -1,0 +1,83 @@
+{% extends "barangay-main.html" %}
+
+
+{% block content %}
+{% block static %}
+{% load static %}
+
+<div class="container pt-5">
+    <div class="pt-5">
+        <a class="text-decoration-none" href="{% url 'barangay rescue' %}" role="button"><i class='bx bx-arrow-back'></i> Back</a>
+    </div>
+      
+         <!--tabs-->
+         <div class="pt-3">
+          <ul class="nav nav-tabs pt-2">
+            <li class="nav-item">
+              <a class="nav-link "  href="{% url 'barangay rescue status' %}">Status</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="{% url 'barangay rescue victim' %}">Victim</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="{% url 'barangay rescue perpetrator' %}">Perpetrator</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="{% url 'barangay rescue incident' %}">Incident</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="{% url 'barangay rescue services' %}">Services</a>
+            </li>
+          </ul>
+        </div>
+          <!--end of tabs-->
+    
+
+        <div class="container pt-5 pb-3">
+          <h1 class="pt-3 text-center">Services Information</h1>
+
+          <div class="pt-5">
+            <div class="row">
+              <div class="col-lg-2 col-md-6 col-sm-8 pt-1">
+                <h5>Services Type:</h5>
+              </div><!--end of col-->
+              <div class="col-lg-10 col-md-6 col-sm-8">
+                <button type="button" class="btn">Issuance / Enforcement of Barangay Protection Order</button>
+              </div><!--end of col-->
+            </div><!--end of row-->
+
+            <div class="row pt-5"> 
+              <div class="col-lg-10 col-md-10 col-sm-8">
+                <h5>Referred:</h5>
+            </div><!--end of col-->
+            <div class="col-lg-2 col-md-2 col-sm-8">
+              <a class="btn btn-primary" href="{% url 'barangay rescue add ref' %}" role="button">Add Referral</a>
+            </div><!--end of col-->
+            </div><!--end of row-->
+             <!--table-->
+        <div class="pt-4 table-responsive-lg table-responsive-md table-responsive-sm">
+          <table class="table table-hover">
+            <tbody>
+              <tr class="border-bottom border-2">
+                <th>PNP</th>
+                <td>September 12, 2023</td>
+                <td class="text-center"><a class="btn btn-outline-success" href="{% url 'barangay rescue ref view' %}" role="button">View More</a></td>
+              </tr>
+              <tr class="border-bottom border-2">
+                <th>Social Welfare</th>
+                <td>September 12, 2023</td>
+                <td class="text-center"><a class="btn btn-outline-success" href="#" role="button">View More</a></td>
+              </tr>
+            </tbody>
+          </table><!--end of table-->
+      </div><!--end of div of table-->
+        </div><!--end of container-->
+
+
+     
+ 
+</div><!--end of container-->
+
+
+{% endblock %}
+{% endblock content %}

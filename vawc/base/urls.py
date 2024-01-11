@@ -59,6 +59,20 @@ urlpatterns = [
     
     path('barangay/services-rescue', views.servicesRescue, name="barangay rescue"),
     
+    path('barangay/services-rescue-status', views.servicesRescueStatus, name="barangay rescue status"),
+    
+    path('barangay/services-rescue-victim', views.servicesRescueVictim, name="barangay rescue victim"),
+     
+    path('barangay/services-rescue-perpetrator', views.servicesRescuePerpetrator, name="barangay rescue perpetrator"),
+    
+    path('barangay/services-rescue-incident', views.servicesRescueIncident, name="barangay rescue incident"),
+    
+    path('barangay/services-rescue-services', views.servicesRescueServices, name="barangay rescue services"),
+    
+    path('barangay/services-rescue-add-ref', views.servicesRescueAddRef, name="barangay rescue add ref"),
+    
+     path('barangay/services-rescue-ref-view', views.servicesRescueRefView, name="barangay rescue ref view"),
+    
     path('barangay/bpo', views.servicesBpo, name="barangay bpo"),
     
     path('barangay/bpo-status', views.servicesBpoStatus, name="barangay bpo status"),
