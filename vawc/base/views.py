@@ -108,8 +108,14 @@ def behalfImpactVicPerpetrator(request):
 def behalfImpactVicIncident(request):
     return render(request, 'vawc/barangay/barangay-behalfImpactedVic-incident.html')
 
-def behalfImpactVicIncident(request):
-    return render(request, 'vawc/barangay/barangay-behalfImpactedVic-incident.html')
+def behalfImpactVicServices(request):
+    return render(request, 'vawc/barangay/barangay-behalfImpactedVic-services.html')
+
+def behalfImpactVicAddRef(request):
+    return render(request, 'vawc/barangay/barangay-behalfImpactedVic-add-ref.html')
+
+def behalfImpactVicViewRef(request):
+    return render(request, 'vawc/barangay/barangay-behalfImpactedVic-view-ref.html')
 
 # end  file a report.
 
