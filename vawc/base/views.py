@@ -87,11 +87,29 @@ def referred(request):
 
 #  file a report.
 #  victim report.
-def mpactVicStatus(request):
-    return render(request, 'vawc/barangay/barangay-impactedVic-status.html')
-
 def impactVic(request):
     return render(request, 'vawc/barangay/barangay-impactedVic.html')
+
+def impactVicStatus(request):
+    return render(request, 'vawc/barangay/barangay-impactedVic-status.html')
+
+def impactVicVictim(request):
+    return render(request, 'vawc/barangay/barangay-impactedVic-victim.html')
+
+def impactVicPerpetrator(request):
+    return render(request, 'vawc/barangay/barangay-impactedVic-perpetrator.html')
+
+def impactVicIncident(request):
+    return render(request, 'vawc/barangay/barangay-impactedVic-incident.html')
+
+def impactVicServices(request):
+    return render(request, 'vawc/barangay/barangay-impactedVic-services.html')
+
+def impactVicAddRef(request):
+    return render(request, 'vawc/barangay/barangay-impactedVic-add-ref.html')
+
+def impactVicViewRef(request):
+    return render(request, 'vawc/barangay/barangay-impactedVic-view-ref.html')
 
 #  behalf impact.
 def behalfImpactVic(request):

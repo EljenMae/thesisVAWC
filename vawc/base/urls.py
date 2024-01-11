@@ -56,6 +56,18 @@ urlpatterns = [
     
     path('barangay/impacted-victim-status', views.impactVicStatus, name="barangay report impact victim status"),
     
+    path('barangay/impacted-victim-victim', views.impactVicVictim, name="barangay report impact victim victim"),
+    
+    path('barangay/impacted-victim-perpetrator', views.impactVicPerpetrator, name="barangay report impact victim perpetrator"),
+    
+    path('barangay/impacted-victim-incident', views.impactVicIncident, name="barangay report impact victim incident"),
+    
+    path('barangay/impacted-victim-services', views.impactVicServices, name="barangay report impact victim services"),
+    
+    path('barangay/impacted-victim-add-ref', views.impactVicAddRef, name="barangay report impact victim add ref"),
+    
+    path('barangay/impacted-victim-view-ref', views.impactVicViewRef, name="barangay report impact victim view ref"),
+    
     path('barangay/impacted-behalf-impacted-victim', views.behalfImpactVic, name="barangay report behalf impact victim"),
     
     path('barangay/impacted-behalf-impacted-victim-status', views.behalfImpactVicStatus, name="barangay report behalf impact victim status"),
