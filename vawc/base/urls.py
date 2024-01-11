@@ -38,6 +38,8 @@ urlpatterns = [
     
     path('barangay/report', views.barreport, name="barangay report"),
     
+    path('barangay/referred', views.referred, name="barangay referred"),
+    
     path('barangay/victimInform', views.victimInfo, name="barangay victim info"),
     path('barangay/perpetInform', views.perpetInfo, name="barangay perpetrator info"),
     
@@ -59,7 +61,21 @@ urlpatterns = [
     
     path('barangay/bpo', views.servicesBpo, name="barangay bpo"),
     
-    path('barangay/referred', views.referred, name="barangay referred"),
+    path('barangay/bpo-status', views.servicesBpoStatus, name="barangay bpo status"),
+    
+    path('barangay/bpo-victim', views.servicesBpoVictim, name="barangay bpo victim"),
+    
+    path('barangay/bpo-perpetrator', views.servicesBpoPerpetrator, name="barangay bpo perpetrator"),
+    
+    path('barangay/bpo-incident', views.servicesBpoIncident, name="barangay bpo incident"),
+    
+    path('barangay/bpo-services', views.servicesBpoServices, name="barangay bpo services"),
+    
+    path('barangay/bpo-add-ref', views.servicesBpoAddRef, name="barangay bpo add ref"),
+    
+     path('barangay/bpo-ref-vew', views.servicesBpoRefView, name="barangay bpo ref view"),
+    
+ 
     
     path('barangay/victim', views.victim, name="barangay victim"),
     

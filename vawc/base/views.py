@@ -104,6 +104,27 @@ def servicesRescue(request):
 def servicesBpo(request):
     return render(request, 'vawc/barangay/barangay-bpo.html')
 
+def servicesBpoStatus(request):
+    return render(request, 'vawc/barangay/barangay-bpo-status.html')
+
+def servicesBpoVictim(request):
+    return render(request, 'vawc/barangay/barangay-bpo-victim.html')
+
+def servicesBpoPerpetrator(request):
+    return render(request, 'vawc/barangay/barangay-bpo-perpetrator.html')
+
+def servicesBpoIncident(request):
+    return render(request, 'vawc/barangay/barangay-bpo-incident.html')
+
+def servicesBpoServices(request):
+    return render(request, 'vawc/barangay/barangay-bpo-services.html')
+
+def servicesBpoAddRef(request):
+    return render(request, 'vawc/barangay/barangay-bpo-add-ref.html')
+
+def servicesBpoRefView(request):
+    return render(request, 'vawc/barangay/barangay-bpo-view-ref.html')
+
 # end of services 
 
 # records
