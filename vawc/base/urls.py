@@ -61,6 +61,8 @@ urlpatterns = [
     
     path('barangay/referred', views.referred, name="barangay referred"),
     
+    path('barangay/victim', views.victim, name="barangay victim"),
+    
     path('barangay/victim-status', views.victimStatus, name="barangay victim status"),
     
     path('barangay/victim-victim', views. victimVictim, name="barangay victim victim"),
@@ -76,7 +78,7 @@ urlpatterns = [
     path('barangay/victim-ref', views.  victimRefView, name="barangay victim view ref"),
     
     
-   path('barangay/victim', views.victim, name="barangay victim"),
+ 
    
     path('barangay/perpetrator', views.perpetrator, name="barangay perpetrator"),
     

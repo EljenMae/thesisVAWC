@@ -1,0 +1,90 @@
+{% extends "barangay-main.html" %}
+
+
+{% block content %}
+{% block static %}
+{% load static %}
+
+<div class="container pt-5">
+  <div class="pt-5">
+    <a class="text-decoration-none" href="{% url 'barangay open cases' %}" role="button"><i class='bx bx-arrow-back'></i> Back</a>
+</div>
+  
+     <!--tabs-->
+     <div class="pt-3">
+      <ul class="nav nav-tabs pt-2">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="{% url 'barangay victim status' %}">Status</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="{% url 'barangay victim victim' %}">Victim</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="{% url 'barangay victim perpetrator' %}">Perpetrator</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link " href="{% url 'barangay victim incident' %}">Incident</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="{% url 'barangay victim services' %}">Services</a>
+        </li>
+      </ul>
+    </div>
+      <!--end of tabs-->
+
+      <div class="row justify-content-end">
+        <div class="col-lg-10 col-md-10 col-sm-8">
+            <h1 class="pt-5">STATUS</h1>
+        </div><!--end of col-->
+        <div class="col-lg-2 col-md-2 col-sm-8 pt-5">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="bi bi-plus"></i> Add Status</button>
+        </div><!--end of col-->
+      </div><!--end of row-->
+        
+      <div class="pt-2">
+        <div class="card">
+          <div class="card-body">
+            This is some text within a card body.
+          </div>
+        </div>
+      </div>
+
+      <div class="container pt-3">
+        <h3><strong>CASES:</strong></h3>
+      <div class="row pt-5">
+        <div class="col-lg-6 col-md-6 col-sm-8">
+          <h5>CLOSE</h5>
+        </div><!--end of col-->
+        <div class="col-lg-6 col-md-6 col-sm-8">
+          <h5>Septeber 12, 2023</h5>
+        </div><!--end of col-->
+      </div><!--end of row-->
+        <div class="pt-2">
+          <a class="btn btn-primary" href="#" role="button">OPEN CASE</a>
+        </div>
+       
+      </div><!--end of container-->
+ 
+</div><!--end of container-->
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">Adding Status</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Understood</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
+{% endblock content %}
