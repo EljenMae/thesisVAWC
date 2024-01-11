@@ -86,6 +86,10 @@ def referred(request):
 # End of report.
 
 #  file a report.
+#  victim report.
+def mpactVicStatus(request):
+    return render(request, 'vawc/barangay/barangay-impactedVic-status.html')
+
 def impactVic(request):
     return render(request, 'vawc/barangay/barangay-impactedVic.html')
 
