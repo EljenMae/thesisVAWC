@@ -58,7 +58,7 @@ urlpatterns = [
     
     path('barangay/impacted-behalf-impacted-victim-status', views.behalfImpactVicStatus, name="barangay report behalf impact victim status"),
     
-    path('barangay/impacted-behalf-impacted-victim', views.behalfImpactVicContact, name="barangay report behalf impact contact"),
+    path('barangay/impacted-behalf-impacted-victim-contact', views.behalfImpactVicContact, name="barangay report behalf impact contact person"),
     
     path('barangay/impacted-behalf-impacted-victim-victim', views.behalfImpactVicVictim, name="barangay report behalf impact victim victim"),
     

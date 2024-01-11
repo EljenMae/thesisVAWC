@@ -89,7 +89,7 @@ def referred(request):
 def impactVic(request):
     return render(request, 'vawc/barangay/barangay-impactedVic.html')
 
-
+#  behalf impact.
 def behalfImpactVic(request):
     return render(request, 'vawc/barangay/barangay-behalfImpactedVic.html')
 

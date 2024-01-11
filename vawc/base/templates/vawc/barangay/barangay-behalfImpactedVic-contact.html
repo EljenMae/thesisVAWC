@@ -1,0 +1,42 @@
+{% extends "barangay-main.html" %}
+
+
+{% block content %}
+{% block static %}
+{% load static %}
+
+<div class="container pt-5">
+  <div class="pt-5">
+    <a class="text-decoration-none" href="{% url 'barangay report behalf impact victim' %}" role="button"><i class='bx bx-arrow-back'></i> Back</a>
+</div>
+  
+     <!--tabs-->
+     <div class="pt-3">
+      <ul class="nav nav-tabs pt-2">
+        <li class="nav-item">
+          <a class="nav-link "  href="{% url 'barangay report behalf impact victim status' %}">Status</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="{% url 'barangay report behalf impact contact person' %}">Contact</a>
+          </li>
+        <li class="nav-item">
+          <a class="nav-link " href="{% url 'barangay report behalf impact victim victim' %}">Victim</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="{% url 'barangay report behalf impact victim perpetrator' %}">Perpetrator</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="{% url 'barangay report behalf impact victim incident' %}">Incident</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="{% url 'barangay report behalf impact victim services' %}">Services</a>
+        </li>
+      </ul>
+    </div>
+      <!--end of tabs-->
+
+</div><!--end of container-->
+
+
+{% endblock %}
+{% endblock content %}
