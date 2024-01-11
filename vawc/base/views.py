@@ -89,8 +89,27 @@ def referred(request):
 def impactVic(request):
     return render(request, 'vawc/barangay/barangay-impactedVic.html')
 
+
 def behalfImpactVic(request):
     return render(request, 'vawc/barangay/barangay-behalfImpactedVic.html')
+
+def behalfImpactVicStatus(request):
+    return render(request, 'vawc/barangay/barangay-behalfImpactedVic-status.html')
+
+def behalfImpactVicContact(request):
+    return render(request, 'vawc/barangay/barangay-behalfImpactedVic-contact.html')
+
+def behalfImpactVicVictim(request):
+    return render(request, 'vawc/barangay/barangay-behalfImpactedVic-victim.html')
+
+def behalfImpactVicPerpetrator(request):
+    return render(request, 'vawc/barangay/barangay-behalfImpactedVic-perpetrator.html')
+
+def behalfImpactVicIncident(request):
+    return render(request, 'vawc/barangay/barangay-behalfImpactedVic-incident.html')
+
+def behalfImpactVicIncident(request):
+    return render(request, 'vawc/barangay/barangay-behalfImpactedVic-incident.html')
 
 # end  file a report.
 
