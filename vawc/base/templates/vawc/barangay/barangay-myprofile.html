@@ -1,0 +1,63 @@
+{% extends "barangay-main.html" %}
+
+
+{% block content %}
+{% block static %}
+{% load static %}
+
+<div class="container pt-5">
+    <div class="row justify-content-end">
+      <div class="col-lg-11 col-md-11 col-sm-8">
+          <h1 class="pt-5">MY PROFILE</h1>
+      </div><!--end of col-->
+      <div class="col-lg-1 col-md-1 col-sm-8 pt-5">
+          <a class="btn btn-primary" href="{% url 'barangay victim info' %}" role="button"><i class="bi bi-pen"></i> Edit</a>
+      </div><!--end of col-->
+  </div><!--end of row-->
+
+  <div class="row">
+    <div class="col">
+        <!--image-->
+    </div><!--end of col-->
+
+    <div class="col-lg-12 col-md-12 col-sm-8">
+        <div class="row pt-3">
+            <div class="col-lg-3 col-md-3 col-sm-8">
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">First Name</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Juan">
+                  </div>
+            </div><!--end of col-->
+            <div class="col-lg-3 col-md-3 col-sm-8">
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Middle Name</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Carlos">
+                  </div>
+            </div><!--end of col-->
+            <div class="col-lg-3 col-md-3 col-sm-8">
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Last Name</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Fabian">
+                  </div>
+            </div><!--end of col-->
+            <div class="col-lg-3 col-md-3 col-sm-8">
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Suffix
+                        
+                    </label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Fabian">
+                  </div>
+            </div><!--end of col-->
+        
+        </div><!--end of row-->
+        
+    </div><!--end of col-->
+
+  </div><!--end of row-->
+
+  <div><!--end of container-->
+
+
+
+{% endblock %}
+{% endblock content %}
