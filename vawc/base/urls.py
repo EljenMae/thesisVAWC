@@ -199,12 +199,7 @@ urlpatterns = [
     
     path('barangay/monthly-feedback-form-view', views.feedbackFormView, name="barangay feedback form view"),
 
-
-
-
     path('barangay/myprofile', views.myProfile, name="barangay my profile"),
-    
-    path('barangay/settings', views.settings, name="barangay settings"),
     
     
    
