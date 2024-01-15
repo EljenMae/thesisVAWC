@@ -9,3 +9,7 @@ pip freeze > requirements.txt (all requirements to be install and should be upda
 
 (Creating a admin)
 python manage.py createsuperuser
+
+(admin panel)
+username: gray
+password: 12554680
