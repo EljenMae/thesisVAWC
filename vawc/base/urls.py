@@ -86,8 +86,6 @@ urlpatterns = [
     
     path('barangay/impacted-behalf-impacted-victim-view-ref', views.behalfImpactVicViewRef, name="barangay report behalf impact victim view ref"),
     
-    
-    
     path('barangay/all-services', views.allServices, name="barangay all services"),
     
     path('barangay/services-rescue', views.servicesRescue, name="barangay rescue"),
@@ -122,8 +120,6 @@ urlpatterns = [
     
      path('barangay/bpo-ref-vew', views.servicesBpoRefView, name="barangay bpo ref view"),
     
- 
-    
     path('barangay/victim', views.victim, name="barangay victim"),
     
     path('barangay/victim-status', views.victimStatus, name="barangay victim status"),
@@ -140,9 +136,6 @@ urlpatterns = [
     
     path('barangay/victim-ref', views.  victimRefView, name="barangay victim view ref"),
     
-    
- 
-   
     path('barangay/perpetrator', views.perpetrator, name="barangay perpetrator"),
     
     path('barangay/perpetrator-status', views.perpetratorStatus, name="barangay perpetrator status"),
@@ -199,17 +192,9 @@ urlpatterns = [
     
     path('barangay/monthly-feedback-form-view', views.feedbackFormView, name="barangay feedback form view"),
 
-
-
-
     path('barangay/myprofile', views.myProfile, name="barangay my profile"),
     
-    path('barangay/settings', views.settings, name="barangay settings"),
+     
     
-    
-   
-    
-    
-    
-
 ]
+
