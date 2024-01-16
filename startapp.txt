@@ -13,3 +13,5 @@ python manage.py createsuperuser
 (admin panel)
 username: gray
 password: 12554680
+
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process

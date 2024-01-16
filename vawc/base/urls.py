@@ -194,5 +194,7 @@ urlpatterns = [
 
     path('barangay/myprofile', views.myProfile, name="barangay my profile"),
     
-
+     
+    
 ]
+
